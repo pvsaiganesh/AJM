@@ -4,12 +4,13 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <div className="above-the-fold-spacer"></div>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
