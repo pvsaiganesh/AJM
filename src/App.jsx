@@ -6,6 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <div className="above-the-fold-spacer"></div>
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
