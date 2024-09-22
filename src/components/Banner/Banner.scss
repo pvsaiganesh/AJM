@@ -1,0 +1,27 @@
+/* Set initial background color */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+.banner {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  animation-name: colorChange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+  0% {
+    background: #008ecc;
+  }
+  50% {
+    background: #a40000;
+  }
+  100% {
+    background: #00bb8e;
+  }
+}
+.border-right {
+  border-left: 2px solid #ee5124;
+}
