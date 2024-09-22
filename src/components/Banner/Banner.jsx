@@ -19,6 +19,7 @@ const Banner = () => {
             <Button
               variant="contained"
               size="large"
+              className="rounded-pill bg-light text-orange"
               endIcon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
