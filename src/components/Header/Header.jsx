@@ -7,7 +7,13 @@ import Logo from "../../assets/AJM.svg";
 import { Link } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Button, Autocomplete, Input, InputAdornment } from "@mui/material";
+import {
+  Button,
+  Autocomplete,
+  Input,
+  InputAdornment,
+  InputBase,
+} from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -81,8 +87,9 @@ const Header = () => {
             <Col lg="3">
               <ThemeProvider theme={theme}>
                 <Autocomplete
+                  freeSolo
                   variant="solid"
-                  className="search-box"
+                  className="search-box p-2 pe-3 ps-3 rounded"
                   // onKeyDown={(event) => {
                   //   if (event.key === "Enter") {
                   //     // Prevent's default 'Enter' behavior.
@@ -92,16 +99,15 @@ const Header = () => {
                   // }}
                   options={["Hello", "Hi"]}
                   renderInput={(params) => (
-                    <Input
+                    <InputBase
                       ref={params.InputProps.ref}
                       {...params}
-                      fullWidth
                       startAdornment={
                         <InputAdornment position="start">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
+                            width="24"
+                            height="24"
                             fill="currentColor"
                             className="bi bi-search"
                             viewBox="0 0 16 16"
@@ -114,8 +120,8 @@ const Header = () => {
                         <InputAdornment position="end">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
+                            width="24"
+                            height="24"
                             fill="currentColor"
                             className="bi bi-list"
                             viewBox="0 0 16 16"
@@ -127,7 +133,9 @@ const Header = () => {
                           </svg>
                         </InputAdornment>
                       }
-                    />
+                    >
+                      <Input fullWidth className="search-box-input" />
+                    </InputBase>
                   )}
                 />
               </ThemeProvider>
