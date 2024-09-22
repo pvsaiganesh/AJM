@@ -22,7 +22,7 @@ const theme = createTheme({
       main: "#EE5124",
     },
     text: {
-      primary: "#EE5124",
+      primary: "#black",
     },
     action: {
       active: "#EE5124",
@@ -102,6 +102,8 @@ const Header = () => {
                     <InputBase
                       ref={params.InputProps.ref}
                       {...params}
+                      size="small"
+                      placeholder="Search here..."
                       startAdornment={
                         <InputAdornment position="start">
                           <svg
