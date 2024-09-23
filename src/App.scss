@@ -5,7 +5,10 @@
   font-weight: 400;
   font-style: normal;
 }
-
+.app {
+  min-height: 100vh;
+  max-width: 100vw;
+}
 $master-color: #ee5124;
 $master-grey: #636363;
 $master-white: #fafafa;

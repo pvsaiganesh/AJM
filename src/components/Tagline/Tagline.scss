@@ -1,6 +1,6 @@
 .scroll {
   position: relative;
-  width: 96vw;
+  max-width: 100vw;
   height: 5%;
   min-height: 25px;
   background-color: white;
@@ -11,7 +11,7 @@
   span {
     font-size: 24px;
     display: inline-block;
-    min-width: 100vw;
+    min-width: 100%;
     margin: 0;
     padding: 0;
     color: white;
@@ -28,7 +28,7 @@
   span {
     font-size: 24px;
     display: inline-block;
-    min-width: 100vw;
+    min-width: 100%;
     margin: 0;
     padding: 0;
     color: white;

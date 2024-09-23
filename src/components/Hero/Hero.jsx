@@ -4,7 +4,6 @@ import Menu from "../Menu/Menu";
 import "./Hero.scss";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import Tagline from "../Tagline/Tagline";
 
 const Hero = () => {
   return (
@@ -19,7 +18,6 @@ const Hero = () => {
           </Col>
         </Row>
       </Container>
-      <Tagline />
       {/* <p className="bg-white  pt-2 pb-2 text-center text-grey">
         One Stop Construction materials store for all type of constructions One
         Stop Construction materials store for all type of constructions{" "}
