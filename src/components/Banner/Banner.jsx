@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 
 const Banner = () => {
   return (
-    <div className="banner text-white p-5">
+    <div className="banner text-white p-5 rounded">
       <Container>
         <Row>
           <Col>

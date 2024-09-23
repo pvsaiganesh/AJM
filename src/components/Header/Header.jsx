@@ -17,7 +17,7 @@ import {
 const Header = () => {
   return (
     <header className="header">
-      <Container fluid className="pt-3 pb-3">
+      <Container fluid className="pt-1 pb-1">
         <Row>
           <Col lg="4" className="col-4  text-start fw-bold">
             {/* <span className="me-2">
@@ -127,7 +127,7 @@ const Header = () => {
           </Col>
 
           <Col lg="4">
-            <Navbar bg="white" data-bs-theme="light">
+            <Navbar data-bs-theme="white">
               <Container>
                 <Nav className="me-auto">
                   <Nav.Link href="#home">Home</Nav.Link>

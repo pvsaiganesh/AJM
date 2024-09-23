@@ -1,112 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.poppins-thin {
-  font-family: "Poppins", system-ui;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", system-ui;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", system-ui;
-  font-weight: 300;
-  font-style: normal;
-}
-
 .poppins-regular {
   font-family: "Poppins", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-.poppins-medium {
-  font-family: "Poppins", system-ui;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", system-ui;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", system-ui;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", system-ui;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", system-ui;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 900;
-  font-style: italic;
-}
+$master-color: #ee5124;
+$master-grey: #636363;
+$master-white: #fafafa;
+$master-red: #bc2b02;
 
 * {
   font-family: "Poppins", system-ui !important;
@@ -119,7 +22,7 @@
   grid-row: 1 / span 2;
 }
 .text-orange {
-  color: #ee5124 !important;
+  color: $master-color !important;
 }
 .logo {
   width: 20rem;
@@ -127,6 +30,14 @@
 }
 
 .bg-orange {
-  background-color: #ee5124 !important;
+  background-color: $master-color !important;
 }
-$master-color: #ee5124;
+.text-grey {
+  color: $master-grey;
+}
+.bg-white {
+  background-color: $master-white !important;
+}
+.bg-red {
+  background-color: $master-red !important;
+}
