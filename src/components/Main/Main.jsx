@@ -1,6 +1,7 @@
-import Features from "../Features/Features";
-import Tagline from "../Tagline/Tagline";
-import Testimonial from "../Testimonial/Testimonial";
+import Expert from "./Features/Expert/Expert";
+import Features from "./Features/Features";
+import Tagline from "./Tagline/Tagline";
+import Testimonial from "./Testimonial/Testimonial";
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
       <Tagline />
       <Features />
       <Testimonial />
+      <Expert />
     </div>
   );
 };
