@@ -1,3 +1,4 @@
+import Companies from "./Companies/Companies";
 import Expert from "./Features/Expert/Expert";
 import Features from "./Features/Features";
 import Tagline from "./Tagline/Tagline";
@@ -8,8 +9,9 @@ const Main = () => {
     <div className="main">
       <Tagline />
       <Features />
-      <Testimonial />
       <Expert />
+      <Testimonial />
+      <Companies />
     </div>
   );
 };
