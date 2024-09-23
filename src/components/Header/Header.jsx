@@ -19,8 +19,8 @@ const Header = () => {
     <header className="header">
       <Container fluid className="pt-3 pb-3">
         <Row>
-          <Col lg="4">
-            <span className="me-2">
+          <Col lg="4" className="col-4  text-start fw-bold">
+            {/* <span className="me-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -33,7 +33,8 @@ const Header = () => {
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
               </svg>
               Location: Vizag, Andhra Pradesh, India
-            </span>
+            </span> */}
+            Bulk Order
           </Col>
           <Col
             lg="4"
