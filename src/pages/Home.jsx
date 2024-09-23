@@ -1,6 +1,7 @@
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Main from "../components/Main/Main";
+import Testimonial from "../components/Testimonial/Testimonial";
 import "./Home.scss";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Hero />
       <Main />
+      <Testimonial />
     </div>
   );
 };
