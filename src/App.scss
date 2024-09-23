@@ -10,6 +10,7 @@ $master-color: #ee5124;
 $master-grey: #636363;
 $master-white: #fafafa;
 $master-red: #bc2b02;
+$master-black: #000000;
 
 * {
   font-family: "Poppins", system-ui !important;
@@ -33,11 +34,14 @@ $master-red: #bc2b02;
   background-color: $master-color !important;
 }
 .text-grey {
-  color: $master-grey;
+  color: $master-grey !important;
 }
 .bg-white {
   background-color: $master-white !important;
 }
 .bg-red {
   background-color: $master-red !important;
+}
+.text-black {
+  color: $master-black;
 }
