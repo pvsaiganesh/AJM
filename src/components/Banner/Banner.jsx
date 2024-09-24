@@ -4,6 +4,7 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import bannerImg from "../../assets/banner-image.svg";
 import { Button } from "@mui/material";
+import Image from "react-bootstrap/esm/Image";
 
 const Banner = () => {
   return (
@@ -40,7 +41,7 @@ const Banner = () => {
             </Button>
           </Col>
           <Col>
-            <img src={bannerImg} />
+            <Image src={bannerImg} fluid />
           </Col>
         </Row>
       </Container>

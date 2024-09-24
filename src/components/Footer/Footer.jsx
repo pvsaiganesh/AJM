@@ -78,7 +78,7 @@ const Footer = () => {
                 <Typography variant="h5" className="pb-3">
                   Instagram
                 </Typography>
-                <div style={{ display: "flex", justifyContent: "center" }}>
+                <div>
                   <InstagramEmbed
                     url="https://www.instagram.com/p/CUbHfhpswxt/"
                     width={300}
