@@ -82,7 +82,7 @@ const Footer = () => {
                   <InstagramEmbed
                     url="https://www.instagram.com/p/CUbHfhpswxt/"
                     width={300}
-                    height={300}
+                    height={100}
                   />
                 </div>
               </Col>

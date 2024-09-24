@@ -18,6 +18,13 @@ const theme = createTheme({
       active: "#EE5124",
     },
   },
+  typography: {
+    fontFamily: `"Poppins", system-ui`,
+    fontSize: 14,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+  },
 });
 function App() {
   return (
