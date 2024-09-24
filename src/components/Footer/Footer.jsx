@@ -8,7 +8,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <Container className="footer-bg p-5" fluid>
+    <Container className="footer-bg" fluid>
       <Row>
         <Col lg="12" className="text-center">
           <Image src={Logo} fluid thumbnail height="350px" width="350px" />
