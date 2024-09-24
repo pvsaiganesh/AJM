@@ -3,6 +3,7 @@ import Hero from "../components/Hero/Hero";
 import Main from "../components/Main/Main";
 import "./Home.scss";
 import "../App.scss";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Header />
       <Hero />
       <Main />
+      <Footer />
     </div>
   );
 };
