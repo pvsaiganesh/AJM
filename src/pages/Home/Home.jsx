@@ -1,9 +1,9 @@
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import Main from "../components/Main/Main";
+import Header from "../../components/Header/Header";
+import Hero from "../../components/Hero/Hero";
+import Main from "../../components/Main/Main";
 import "./Home.scss";
-import "../App.scss";
-import Footer from "../components/Footer/Footer";
+import "../../App.scss";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
