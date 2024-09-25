@@ -6,6 +6,8 @@ import {
   Paper,
 } from "@mui/material";
 import "./Menu.scss";
+import menuIcon from "../../assets/menu-icon.svg";
+import Image from "react-bootstrap/esm/Image";
 
 const Menu = () => {
   return (
@@ -28,6 +30,24 @@ const Menu = () => {
             </svg>
           </ListItemIcon>
           <ListItemText>ALL Categories</ListItemText>
+        </MenuItem>
+        <MenuItem className="p-0">
+          <ListItemIcon className="p-3 me-3 ">
+            <Image fluid src={menuIcon} />
+          </ListItemIcon>
+          <ListItemText>Cement</ListItemText>
+        </MenuItem>
+        <MenuItem className="p-0">
+          <ListItemIcon className="p-3 me-3 ">
+            <Image fluid src={menuIcon} />
+          </ListItemIcon>
+          <ListItemText>Cement</ListItemText>
+        </MenuItem>
+        <MenuItem className="p-0">
+          <ListItemIcon className="p-3 me-3 ">
+            <Image fluid src={menuIcon} />
+          </ListItemIcon>
+          <ListItemText>Cement</ListItemText>
         </MenuItem>
       </MenuList>
     </Paper>

@@ -1,3 +1,4 @@
+import Category from "./Category/Category";
 import Companies from "./Companies/Companies";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import Expert from "./Features/Expert/Expert";
@@ -10,6 +11,7 @@ const Main = () => {
     <div className="main">
       <Tagline />
       <Features />
+      <Category />
       <Expert />
       <ContactInfo />
       <Testimonial />
