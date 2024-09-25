@@ -14,10 +14,10 @@ const ContactInfo = () => {
     <Container fluid className="pt-5 pb-5">
       <Row>
         <Col lg="5">
-          <Image src={ContactUsImage} />
+          <Image src={ContactUsImage} fluid />
         </Col>
         <Col
-          lg="3"
+          lg="2"
           className="d-flex flex-row justify-content-center align-items-center"
         >
           <Container>
@@ -67,7 +67,7 @@ const ContactInfo = () => {
             </Row>
           </Container>
         </Col>
-        <Col lg="4" className="p-5 pt-0 ">
+        <Col lg="5" className="p-5 pt-0 ">
           <Container fluid>
             <Typography variant="h5" className="pb-3">
               Contact Us

@@ -2,7 +2,7 @@ import "./Tagline.scss";
 // import "../../App.scss";
 const Tagline = () => {
   return (
-    <marquee direction="left" onMouseOver="stop()" onMouseOut="start()">
+    <marquee direction="left" onMouseOver={"stop()"} onMouseOut="start()">
       <span className=" text-center text-grey">
         One Stop Construction materials store for all type of constructions
       </span>

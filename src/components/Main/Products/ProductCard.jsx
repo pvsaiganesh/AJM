@@ -4,14 +4,17 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Image from "react-bootstrap/esm/Image";
 import Container from "react-bootstrap/esm/Container";
+import PropTypes from "prop-types";
 
-const Product = (props) => {
-  const { image, title, price, tagtitle } = props;
+const Product = ({ image, title, price, tagtitle }) => {
   return (
     <Container fluid className="p-2 product-card">
       <Row className="p-2">
-        <Col lg="12" className="text-start">
-          <Image src={image} />
+        <Col lg="12" className="text-start position-relative">
+          <Image src={image} fluid />
+          <Typography className="fs-6 position-absolute top-0 bg-orange m-1 p-1 text-white rounded">
+            {tagtitle}
+          </Typography>
         </Col>
         <Col lg="12" className="text-start">
           <Typography variant="h6" className="text-grey">
@@ -33,6 +36,13 @@ const Product = (props) => {
       </Row>
     </Container>
   );
+};
+Product.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  tagtitle: PropTypes.string,
+  price: PropTypes.number,
+  children: PropTypes.node,
 };
 
 export default Product;

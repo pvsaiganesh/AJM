@@ -1,14 +1,14 @@
 import { Container } from "@mui/material";
 import Row from "react-bootstrap/esm/Row";
-import Product from "./Product";
+import Product from "./ProductCard";
 import Col from "react-bootstrap/esm/Col";
-import { products } from "./products";
+import { productsInfo } from "./products-constants";
 
-const Products = () => {
+export const Products = () => {
   return (
-    <Container>
+    <Container fluid>
       <Row>
-        {products.map((product) => {
+        {productsInfo.map((product) => {
           return (
             <Col lg="3" key={product.id} className="p-2">
               <Product {...product} />
