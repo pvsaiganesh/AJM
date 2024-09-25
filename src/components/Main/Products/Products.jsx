@@ -10,7 +10,7 @@ const Products = () => {
       <Row>
         {products.map((product) => {
           return (
-            <Col lg="2" key={product.id} className="p-2">
+            <Col lg="3" key={product.id} className="p-2">
               <Product {...product} />
             </Col>
           );
