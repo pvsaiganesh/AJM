@@ -8,7 +8,7 @@ import Col from "react-bootstrap/esm/Col";
 const Hero = () => {
   return (
     <div className="hero">
-      <Container fluid>
+      <Container fluid="true">
         <Row>
           <Col className="p-2" lg="3">
             <Menu />

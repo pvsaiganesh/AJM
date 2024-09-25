@@ -41,7 +41,7 @@ const Banner = () => {
             </Button>
           </Col>
           <Col>
-            <Image src={bannerImg} fluid />
+            <Image src={bannerImg} fluid="true" />
           </Col>
         </Row>
       </Container>

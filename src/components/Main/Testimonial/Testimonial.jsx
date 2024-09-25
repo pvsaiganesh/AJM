@@ -9,94 +9,91 @@ import customer from "../../../assets/customer.svg";
 
 const Testimonial = () => {
   return (
-    <Container fluid className="p-5 testimonial-bg text-center">
+    <Container fluid="true" className="p-5 testimonial-bg text-center">
       <Typography variant="h6" className="text-orange">
         Client Testimonial
       </Typography>
       <Typography variant="h4">What our Clients Say</Typography>
       <Row className="pt-5">
-        <Col
-          lg={{ span: 3, offset: 1 }}
-          className="p-3 text-start d-flex flex-column bg-white"
-        >
-          <Typography variant="h-6" className="pb-2">
-            <Image src={invertedComma} />
-          </Typography>
-          <Typography variant="h-6" className="pb-2">
-            The concrete mix was top-notch, providing excellent strength and
-            durability. Easy to work with, and the final result was flawless.
-            Perfect for any construction project. Highly recommended for
-            professionals
-          </Typography>
-          <Container className="pt-2">
-            <Row>
-              <Col lg="6" className="d-flex flex-row">
-                <Image src={customer} />
-                <Container>
-                  <Typography className="name">Robert</Typography>
-                  <Typography className="text-orange">Customer</Typography>
-                </Container>
-              </Col>
-              <Col lg="6" className="text-end">
-                <Rating name="read-only" defaultValue={5} readOnly />
-              </Col>
-            </Row>
+        <Col lg={{ span: 4, offset: 0 }}>
+          <Container className="p-3 text-start d-flex flex-column bg-white">
+            <Typography variant="h-6" className="pb-2">
+              <Image src={invertedComma} />
+            </Typography>
+            <Typography variant="h-6" className="pb-2">
+              The concrete mix was top-notch, providing excellent strength and
+              durability. Easy to work with, and the final result was flawless.
+              Perfect for any construction project. Highly recommended for
+              professionals
+            </Typography>
+            <Container className="pt-2">
+              <Row>
+                <Col lg="6" className="d-flex flex-row">
+                  <Image src={customer} />
+                  <Container>
+                    <Typography className="name">Robert</Typography>
+                    <Typography className="text-orange">Customer</Typography>
+                  </Container>
+                </Col>
+                <Col lg="6" className="text-end">
+                  <Rating name="read-only" defaultValue={5} readOnly />
+                </Col>
+              </Row>
+            </Container>
           </Container>
         </Col>
-        <Col
-          lg={{ span: 3, offset: 1 }}
-          className="p-3 text-start d-flex flex-column bg-white"
-        >
-          <Typography variant="h-6" className="pb-2">
-            <Image src={invertedComma} />
-          </Typography>
-          <Typography variant="h-6" className="pb-2">
-            The concrete mix was top-notch, providing excellent strength and
-            durability. Easy to work with, and the final result was flawless.
-            Perfect for any construction project. Highly recommended for
-            professionals
-          </Typography>
-          <Container className="pt-2">
-            <Row>
-              <Col lg="6" className="d-flex flex-row">
-                <Image src={customer} />
-                <Container>
-                  <Typography className="name">Robert</Typography>
-                  <Typography className="text-orange">Customer</Typography>
-                </Container>
-              </Col>
-              <Col lg="6" className="text-end">
-                <Rating name="read-only" defaultValue={5} readOnly />
-              </Col>
-            </Row>
+        <Col lg={{ span: 4, offset: 0 }}>
+          <Container className="p-3 text-start d-flex flex-column bg-white">
+            <Typography variant="h-6" className="pb-2">
+              <Image src={invertedComma} />
+            </Typography>
+            <Typography variant="h-6" className="pb-2">
+              The concrete mix was top-notch, providing excellent strength and
+              durability. Easy to work with, and the final result was flawless.
+              Perfect for any construction project. Highly recommended for
+              professionals
+            </Typography>
+            <Container className="pt-2">
+              <Row>
+                <Col lg="6" className="d-flex flex-row">
+                  <Image src={customer} />
+                  <Container>
+                    <Typography className="name">Robert</Typography>
+                    <Typography className="text-orange">Customer</Typography>
+                  </Container>
+                </Col>
+                <Col lg="6" className="text-end">
+                  <Rating name="read-only" defaultValue={5} readOnly />
+                </Col>
+              </Row>
+            </Container>
           </Container>
         </Col>
-        <Col
-          lg={{ span: 3, offset: 1 }}
-          className="p-3 text-start d-flex flex-column bg-white"
-        >
-          <Typography variant="h-6" className="pb-2">
-            <Image src={invertedComma} />
-          </Typography>
-          <Typography variant="h-6" className="pb-2">
-            The concrete mix was top-notch, providing excellent strength and
-            durability. Easy to work with, and the final result was flawless.
-            Perfect for any construction project. Highly recommended for
-            professionals
-          </Typography>
-          <Container className="pt-2">
-            <Row>
-              <Col lg="6" className="d-flex flex-row">
-                <Image src={customer} />
-                <Container>
-                  <Typography className="name">Robert</Typography>
-                  <Typography className="text-orange">Customer</Typography>
-                </Container>
-              </Col>
-              <Col lg="6" className="text-end">
-                <Rating name="read-only" defaultValue={5} readOnly />
-              </Col>
-            </Row>
+        <Col lg={{ span: 4, offset: 0 }}>
+          <Container className="p-3 text-start d-flex flex-column bg-white">
+            <Typography variant="h-6" className="pb-2">
+              <Image src={invertedComma} />
+            </Typography>
+            <Typography variant="h-6" className="pb-2">
+              The concrete mix was top-notch, providing excellent strength and
+              durability. Easy to work with, and the final result was flawless.
+              Perfect for any construction project. Highly recommended for
+              professionals
+            </Typography>
+            <Container className="pt-2">
+              <Row>
+                <Col lg="6" className="d-flex flex-row">
+                  <Image src={customer} />
+                  <Container>
+                    <Typography className="name">Robert</Typography>
+                    <Typography className="text-orange">Customer</Typography>
+                  </Container>
+                </Col>
+                <Col lg="6" className="text-end">
+                  <Rating name="read-only" defaultValue={5} readOnly />
+                </Col>
+              </Row>
+            </Container>
           </Container>
         </Col>
       </Row>

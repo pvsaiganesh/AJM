@@ -7,7 +7,7 @@ const FeatureCard = (item) => {
     <Col lg="3" className="feature-card d-flex flex-row">
       <div className=" pe-5 align-self-center">
         <span className="rounded-circle p-4 feature-image">
-          <Image className="feature-icon" src={item.icon} fluid />
+          <Image className="feature-icon" src={item.icon} fluid="true" />
         </span>
       </div>
       <div className=" align-self-center feature-text">

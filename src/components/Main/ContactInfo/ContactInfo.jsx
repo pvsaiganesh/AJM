@@ -11,10 +11,10 @@ import icon3 from "../../../assets/telephone-outbound.svg";
 
 const ContactInfo = () => {
   return (
-    <Container fluid className="pt-5 pb-5">
+    <Container fluid="true" className="pt-5 pb-5">
       <Row>
         <Col lg="5">
-          <Image src={ContactUsImage} fluid />
+          <Image src={ContactUsImage} fluid="true" />
         </Col>
         <Col
           lg="2"
@@ -23,7 +23,7 @@ const ContactInfo = () => {
           <Container>
             <Row>
               <Col lg="12" className="text-center pb-3 p-1">
-                <Container fluid className="border-bottom">
+                <Container fluid="true" className="border-bottom">
                   <Row>
                     <Col lg="12" className="pb-3">
                       <Image src={icon1} />
@@ -37,7 +37,7 @@ const ContactInfo = () => {
                 </Container>
               </Col>
               <Col lg="12" className="text-center pb-3">
-                <Container fluid className="border-bottom">
+                <Container fluid="true" className="border-bottom">
                   <Row>
                     <Col lg="12" className="pb-3">
                       <Image src={icon2} />
@@ -51,7 +51,7 @@ const ContactInfo = () => {
                 </Container>
               </Col>
               <Col lg="12" className="text-center pb-3">
-                <Container fluid className="border-bottom">
+                <Container fluid="true" className="border-bottom">
                   <Row>
                     <Col lg="12" className="pb-3">
                       <Image src={icon3} />
@@ -68,7 +68,7 @@ const ContactInfo = () => {
           </Container>
         </Col>
         <Col lg="5" className="p-5 pt-0 ">
-          <Container fluid>
+          <Container fluid="true">
             <Typography variant="h5" className="pb-3">
               Contact Us
             </Typography>

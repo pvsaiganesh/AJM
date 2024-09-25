@@ -17,7 +17,7 @@ import {
 const Header = () => {
   return (
     <header className="header">
-      <Container fluid className="pt-1 pb-1">
+      <Container fluid="true" className="pt-1 pb-1">
         <Row>
           <Col lg="4" className="col-4  text-start fw-bold">
             {/* <span className="me-2">
@@ -62,11 +62,11 @@ const Header = () => {
           </Col>
         </Row>
       </Container>
-      <Container fluid>
+      <Container fluid="true">
         <Row className="d-flex flex-row justify-content-start align-items-center">
           <Col lg="2">
             <Link to="/">
-              <Image className="logo" src={Logo} fluid rounded />
+              <Image className="logo" src={Logo} fluid="true" rounded />
             </Link>
           </Col>
           <Col lg="3">

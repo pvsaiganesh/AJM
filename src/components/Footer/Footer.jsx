@@ -10,10 +10,16 @@ import { InstagramEmbed } from "react-social-media-embed";
 const Footer = () => {
   return (
     <>
-      <Container className="footer-bg p-5" fluid>
+      <Container className="footer-bg p-5" fluid="true">
         <Row>
           <Col lg="12" className="text-center pb-5">
-            <Image src={Logo} fluid thumbnail height="350px" width="350px" />
+            <Image
+              src={Logo}
+              fluid="true"
+              thumbnail
+              height="350px"
+              width="350px"
+            />
           </Col>
           <Col lg="12" className="text-white">
             <Row>
@@ -90,7 +96,7 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="bg-orange">
+      <Container fluid="true" className="bg-orange">
         <Row className="d-flex flex-row justify-content-between text-white p-3">
           <Col lg="4 text-start">Social Links</Col>
           <Col lg="4 text-center">AJM © 2024. All Rights Reserved</Col>

@@ -1,3 +1,4 @@
+import Banners from "./Banners/Banners";
 import Category from "./Category/Category";
 import Companies from "./Companies/Companies";
 import ContactInfo from "./ContactInfo/ContactInfo";
@@ -13,6 +14,7 @@ const Main = () => {
       <Features />
       <Category />
       <Expert />
+      <Banners />
       <ContactInfo />
       <Testimonial />
       <Companies />

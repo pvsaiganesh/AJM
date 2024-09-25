@@ -33,19 +33,19 @@ const Menu = () => {
         </MenuItem>
         <MenuItem className="p-0">
           <ListItemIcon className="p-3 me-3 ">
-            <Image fluid src={menuIcon} />
+            <Image fluid="true" src={menuIcon} />
           </ListItemIcon>
           <ListItemText>Cement</ListItemText>
         </MenuItem>
         <MenuItem className="p-0">
           <ListItemIcon className="p-3 me-3 ">
-            <Image fluid src={menuIcon} />
+            <Image fluid="true" src={menuIcon} />
           </ListItemIcon>
           <ListItemText>Cement</ListItemText>
         </MenuItem>
         <MenuItem className="p-0">
           <ListItemIcon className="p-3 me-3 ">
-            <Image fluid src={menuIcon} />
+            <Image fluid="true" src={menuIcon} />
           </ListItemIcon>
           <ListItemText>Cement</ListItemText>
         </MenuItem>

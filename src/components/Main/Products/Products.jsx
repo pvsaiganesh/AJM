@@ -6,7 +6,7 @@ import { productsInfo } from "./products-constants";
 
 export const Products = () => {
   return (
-    <Container fluid>
+    <Container fluid="true">
       <Row>
         {productsInfo.map((product) => {
           return (
