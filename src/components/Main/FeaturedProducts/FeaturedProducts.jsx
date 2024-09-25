@@ -1,11 +1,11 @@
-import "./FeaturedProduct.scss";
+import "./FeaturedProducts.scss";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import { Typography } from "@mui/material";
 import Col from "react-bootstrap/esm/Col";
 // import Products from "../Products/Products";
 
-const FeaturedProduct = () => {
+const FeaturedProducts = () => {
   return (
     <Container fluid="true" className="text-center p-5">
       <Row>
@@ -23,4 +23,4 @@ const FeaturedProduct = () => {
   );
 };
 
-export default FeaturedProduct;
+export default FeaturedProducts;
