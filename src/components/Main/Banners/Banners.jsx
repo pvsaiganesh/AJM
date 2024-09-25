@@ -1,8 +1,6 @@
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import bannerImg from "../../../assets/banners-image.svg";
-import Image from "react-bootstrap/esm/Image";
 import "./Banners.scss";
 import { Button, Typography } from "@mui/material";
 
