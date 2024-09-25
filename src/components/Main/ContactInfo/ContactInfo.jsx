@@ -4,7 +4,7 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Image from "react-bootstrap/esm/Image";
 import ContactUsImage from "../../../assets/contact-us-image.svg";
-import { Typography } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 import icon1 from "../../../assets/geo-alt.svg";
 import icon2 from "../../../assets/envelope.svg";
 import icon3 from "../../../assets/telephone-outbound.svg";
@@ -67,7 +67,65 @@ const ContactInfo = () => {
             </Row>
           </Container>
         </Col>
-        <Col lg="4"></Col>
+        <Col lg="4" className="p-5 pt-0 ">
+          <Container fluid>
+            <Typography variant="h5" className="pb-3">
+              Contact Us
+            </Typography>
+            <TextField
+              id="filled-basic"
+              label="Full Name"
+              variant="filled"
+              className="pb-3"
+              fullWidth
+            />
+            <TextField
+              id="outlined-number"
+              label="Phone Number"
+              fullWidth
+              variant="filled"
+              type="number"
+              className="pb-3"
+              // slotProps={{
+              //   inputLabel: {
+              //     shrink: true,
+              //   },
+              // }}
+            />
+            <TextField
+              fullWidth
+              variant="filled"
+              id="outlined-multiline-static"
+              label="Share your message"
+              multiline
+              className="pb-3"
+              rows={4}
+              // defaultValue="Default Value"
+            />
+            <Button
+              variant="contained"
+              size="large"
+              className="rounded-pill"
+              endIcon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              }
+            >
+              Submit message
+            </Button>
+          </Container>
+        </Col>
       </Row>
     </Container>
   );
