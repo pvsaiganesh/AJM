@@ -7,10 +7,10 @@ import Image from "react-bootstrap/esm/Image";
 const Product = (props) => {
   const { image, title, price, tagtitle } = props;
   return (
-    <Container>
-      <Row>
+    <Container fluid>
+      <Row className="text-center">
         <Col lg="12">
-          <Image src={image} />
+          <Image src={image} fluid />
           Hello
         </Col>
       </Row>
