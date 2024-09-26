@@ -7,7 +7,7 @@ import Products from "../Products/Products";
 
 const Category = () => {
   return (
-    <Container fluid="true" className="text-center p-5">
+    <Container fluid="true" className="text-center p-1 p-md-5">
       <Row>
         <Col lg="12">
           <Typography variant="h6" className="text-uppercase text-orange">

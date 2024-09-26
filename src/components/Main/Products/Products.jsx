@@ -13,7 +13,7 @@ export const Products = ({ lg, children }) => {
         {children}
         {productsInfo.map((product) => {
           return (
-            <Col lg={lg ? lg : "3"} key={product.id} className="p-2">
+            <Col xs="6" lg={lg ? lg : "3"} key={product.id} className="p-2">
               <Product {...product} />
             </Col>
           );

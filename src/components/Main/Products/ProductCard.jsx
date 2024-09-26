@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Product = ({ image, title, price, tagtitle }) => {
   return (
     <Container fluid="true" className="p-2 product-card">
-      <Row className="p-2">
+      <Row className="p-0 p-md-2">
         <Col lg="12" className="text-start position-relative">
           <Image src={image} fluid="true" />
           <Typography className="fs-6 position-absolute top-0 bg-orange m-1 p-1 text-white rounded">

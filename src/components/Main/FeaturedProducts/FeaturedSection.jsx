@@ -10,7 +10,7 @@ const FeaturedSection = ({ title }) => {
   return (
     <Container>
       <Row>
-        <Col lg="12">
+        <Col lg="12" className="pb-3">
           <Typography variant="h6">{title}</Typography>
         </Col>
         <Col lg="12">

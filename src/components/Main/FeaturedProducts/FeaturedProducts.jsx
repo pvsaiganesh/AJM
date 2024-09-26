@@ -18,7 +18,7 @@ const FeaturedProducts = () => {
           </Typography>
         </Col>
         <Products lg="3">
-          <Col lg="3">
+          <Col xs="6" lg="3">
             <Container
               fluid
               className="banner-side-image p-0 d-flex flex-column rounded justify-content-start"

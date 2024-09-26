@@ -21,9 +21,9 @@ const Footer = () => {
               width="350px"
             />
           </Col>
-          <Col lg="12" className="text-white">
+          <Col lg="12" className="text-white pb-3">
             <Row>
-              <Col lg="3">
+              <Col lg="3" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   About AJM
                 </Typography>
@@ -46,7 +46,7 @@ const Footer = () => {
                   AJM@gmail.com
                 </a>
               </Col>
-              <Col lg="2">
+              <Col xs="6" lg="2" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   Pages
                 </Typography>
@@ -57,7 +57,7 @@ const Footer = () => {
                   <li className="pb-3">Contact Us</li>
                 </ul>
               </Col>
-              <Col lg="2">
+              <Col xs="6" lg="2" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   My Account
                 </Typography>
@@ -69,7 +69,7 @@ const Footer = () => {
                 </ul>
               </Col>
 
-              <Col lg="2">
+              <Col lg="2" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   Help
                 </Typography>
@@ -80,7 +80,7 @@ const Footer = () => {
                   <li className="pb-3">Privacy Policy</li>
                 </ul>
               </Col>
-              <Col lg="3">
+              <Col lg="3" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   Instagram
                 </Typography>

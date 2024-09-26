@@ -15,7 +15,7 @@ const Testimonial = () => {
       </Typography>
       <Typography variant="h4">What our Clients Say</Typography>
       <Row className="pt-5">
-        <Col lg={{ span: 4, offset: 0 }}>
+        <Col lg={{ span: 4, offset: 0 }} className="pb-3">
           <Container className="p-3 text-start d-flex flex-column bg-white">
             <Typography variant="h-6" className="pb-2">
               <Image src={invertedComma} />
@@ -42,7 +42,7 @@ const Testimonial = () => {
             </Container>
           </Container>
         </Col>
-        <Col lg={{ span: 4, offset: 0 }}>
+        <Col lg={{ span: 4, offset: 0 }} className="pb-3">
           <Container className="p-3 text-start d-flex flex-column bg-white">
             <Typography variant="h-6" className="pb-2">
               <Image src={invertedComma} />
@@ -69,7 +69,7 @@ const Testimonial = () => {
             </Container>
           </Container>
         </Col>
-        <Col lg={{ span: 4, offset: 0 }}>
+        <Col lg={{ span: 4, offset: 0 }} className="pb-3">
           <Container className="p-3 text-start d-flex flex-column bg-white">
             <Typography variant="h-6" className="pb-2">
               <Image src={invertedComma} />
