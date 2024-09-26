@@ -6,6 +6,9 @@ import ProductPage from "./pages/Product/ProductPage";
 
 const theme = createTheme({
   palette: {
+    background: {
+      paper: "#fafafa",
+    },
     primary: {
       main: "#EE5124",
     },
