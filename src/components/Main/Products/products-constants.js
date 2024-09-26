@@ -22,11 +22,11 @@ export const productsInfo = [
     tagtitle: "Sale 50%",
     id: 3,
   },
-  {
-    image: ProductImage,
-    title: "Rocks",
-    price: 1000,
-    tagtitle: "Sale 50%",
-    id: 4,
-  },
+  // {
+  //   image: ProductImage,
+  //   title: "Rocks",
+  //   price: 1000,
+  //   tagtitle: "Sale 50%",
+  //   id: 4,
+  // },
 ];

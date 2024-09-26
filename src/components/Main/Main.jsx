@@ -3,6 +3,7 @@ import Category from "./Category/Category";
 import Companies from "./Companies/Companies";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import FeaturedProducts from "./FeaturedProducts/FeaturedProducts";
+import FeaturedProducts2 from "./FeaturedProducts/FeaturedProducts2";
 import Expert from "./Features/Expert/Expert";
 import Features from "./Features/Features";
 import Tagline from "./Tagline/Tagline";
@@ -16,6 +17,7 @@ const Main = () => {
       <Category />
       <Expert />
       <FeaturedProducts />
+      <FeaturedProducts2 />
       <Banners />
       <ContactInfo />
       <Testimonial />
