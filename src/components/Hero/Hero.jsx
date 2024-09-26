@@ -10,10 +10,10 @@ const Hero = () => {
     <div className="hero">
       <Container fluid="true">
         <Row>
-          <Col className="p-2" lg="3">
+          <Col className="p-2 d-none d-md-block" lg="3">
             <Menu />
           </Col>
-          <Col className="p-2" lg="9">
+          <Col xs="12" className="p-2" lg="9">
             <Banner />
           </Col>
         </Row>

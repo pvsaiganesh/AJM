@@ -11,7 +11,7 @@ const Banner = () => {
     <div className="banner text-white p-5 rounded">
       <Container>
         <Row>
-          <Col>
+          <Col xs="12" sm="6">
             <p className="fs-1">Building & Construction Materials</p>
             <p className="fs-4 border-right ps-3">
               One Stop Construction materials store for all type of
@@ -40,7 +40,7 @@ const Banner = () => {
               Shop now
             </Button>
           </Col>
-          <Col>
+          <Col xs="12" sm="6">
             <Image src={bannerImg} fluid="true" />
           </Col>
         </Row>
