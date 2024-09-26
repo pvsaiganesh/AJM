@@ -16,10 +16,10 @@ import {
 } from "@mui/material";
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header pb-2">
       <Container fluid="true">
         <Row>
-          <Col className="order-1 order-lg-0" xs="6" lg="12">
+          <Col className="order-1 order-lg-0" xs="7" lg="12">
             <Container fluid="true" className="pt-1 pb-1">
               <Row>
                 <Col lg="4" className="d-none d-lg-block text-start fw-bold">
@@ -42,11 +42,11 @@ const Header = () => {
                 <Col
                   xs="12"
                   lg="4"
-                  className="text-orange text-center text-lg-center fw-bold"
+                  className="text-orange text-start text-lg-center fw-bold"
                 >
                   Get a Free Quote
                 </Col>
-                <Col xs="12" lg="4" className="text-center text-lg-end pe-lg-4">
+                <Col xs="12" lg="4" className="text-start text-lg-end pe-lg-4">
                   <span className="me-2 bg-primary rounded-circle p-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ const Header = () => {
               </Row>
             </Container>
           </Col>
-          <Col className="order-0 order-lg-1" xs="6" lg="12">
+          <Col className="order-0 order-lg-1" xs="5" lg="12">
             <Container fluid="true">
               <Row className="d-flex flex-row justify-content-start align-items-center">
                 <Col xs="12" lg="2">
@@ -168,14 +168,14 @@ const Header = () => {
                   >
                     <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
                   </svg>
-                  <Button variant="contained" className="me-3">
+                  <Button variant="contained" size="small" className="me-3">
                     Login/Register
                   </Button>
                 </Col>
               </Row>
             </Container>
           </Col>
-          <Col xs="6" className="order-2 d-lg-none" lg="4">
+          <Col xs="3" className="order-2 d-lg-none" lg="4">
             <svg
               type="button"
               data-bs-toggle="offcanvas"
@@ -220,7 +220,7 @@ const Header = () => {
             </div>
           </Col>
           <Col
-            xs="6"
+            xs="9"
             className="order-3 d-lg-none d-flex flex-row justify-content-end"
           >
             <Button variant="contained" className="me-3">
