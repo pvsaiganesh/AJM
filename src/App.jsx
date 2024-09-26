@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import ProductPage from "./pages/Product/ProductPage";
-import ScrollToTop from "./hooks/ScrollToTop";
 
 const theme = createTheme({
   palette: {

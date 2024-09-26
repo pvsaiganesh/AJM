@@ -41,7 +41,8 @@ $master-black: #000000;
   color: $master-color !important;
 }
 .logo {
-  width: 20rem;
+  width: 100%;
+  max-width: 10rem;
   height: 5rem;
 }
 
