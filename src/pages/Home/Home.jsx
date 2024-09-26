@@ -1,19 +1,15 @@
-import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import Main from "../../components/Main/Main";
 import "./Home.scss";
 import "../../App.scss";
-import Footer from "../../components/Footer/Footer";
+import HomeWrapper from "../HomeWrapper";
 
 const Home = () => {
   return (
-    <div className="homepage">
-      <div className="above-the-fold-spacer"></div>
-      <Header />
+    <HomeWrapper>
       <Hero />
       <Main />
-      <Footer />
-    </div>
+    </HomeWrapper>
   );
 };
 

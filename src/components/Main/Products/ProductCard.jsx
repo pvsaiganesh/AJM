@@ -5,6 +5,7 @@ import Col from "react-bootstrap/esm/Col";
 import Image from "react-bootstrap/esm/Image";
 import Container from "react-bootstrap/esm/Container";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Product = ({ image, title, price, tagtitle }) => {
   return (
@@ -27,9 +28,11 @@ const Product = ({ image, title, price, tagtitle }) => {
               ₹{price}
             </Col>
             <Col lg="6" className="text-end">
-              <Button variant="contained" size="small">
-                Buy Now
-              </Button>
+              <Link to="/product">
+                <Button variant="contained" size="small">
+                  Buy Now
+                </Button>
+              </Link>
             </Col>
           </Row>
         </Col>
