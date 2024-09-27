@@ -13,7 +13,7 @@ import {
 } from "swiper/modules";
 import "swiper/scss";
 import "./VerticalCarousal.scss";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import "../../../node_modules/swiper/modules/navigation";
 import "../../../node_modules/swiper/modules/pagination";
 import "../../../node_modules/swiper/modules";
@@ -23,7 +23,6 @@ import Col from "react-bootstrap/esm/Col";
 import Image from "react-bootstrap/esm/Image";
 import img1 from "../../assets/small-image.svg";
 import img2 from "../../assets/thumb-image.svg";
-import img3 from "../../assets/product-image-1.svg";
 
 import { Button } from "@mui/material";
 
