@@ -1,15 +1,19 @@
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import {
-  Pagination,
+  Swiper,
+  SwiperSlide,
+  // useSwiper
+} from "swiper/react";
+import {
+  // Pagination,
   Navigation,
   Scrollbar,
-  A11y,
-  Controller,
+  // A11y,
+  // Controller,
   Thumbs,
 } from "swiper/modules";
 import "swiper/scss";
 import "./VerticalCarousal.scss";
-import React, { useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import "../../../node_modules/swiper/modules/navigation";
 import "../../../node_modules/swiper/modules/pagination";
 import "../../../node_modules/swiper/modules";
@@ -19,6 +23,7 @@ import Col from "react-bootstrap/esm/Col";
 import Image from "react-bootstrap/esm/Image";
 import img1 from "../../assets/small-image.svg";
 import img2 from "../../assets/thumb-image.svg";
+import { Button } from "@mui/material";
 
 // import "swiper/scss";
 // import "swiper/scss/navigation";
@@ -67,29 +72,34 @@ import img2 from "../../assets/thumb-image.svg";
 //     </Swiper>
 //   );
 // };
-
 const VerticalCarousal = () => {
   // store controlled swiper instance
-  const [controlledSwiper, setControlledSwiper] = useState(null);
+  const [swiperRef, setSwiperRef] = useState();
+  // const [controlledSwiper, setControlledSwiper] = useState(null);
   const thumbsSwiperRef = useRef();
-  const [thumbsSwiper, setThumbsSwiper] = useState(thumbsSwiperRef.current);
+  // const [thumbsSwiper, setThumbsSwiper] = useState(thumbsSwiperRef.current);
+  const handlePrevious = useCallback(() => {
+    swiperRef?.slidePrev();
+  }, [swiperRef]);
 
+  const handleNext = useCallback(() => {
+    swiperRef?.slideNext();
+  }, [swiperRef]);
   const thumbsProps = {
     spaceBetween: 10,
     slidesPerView: 4,
     direction: "vertical",
-    navigation: true,
-    pagination: true,
-    // If we need pagination
+    // pagination: true,
+    // // If we need pagination
     // pagination: {
     //   el: ".swiper-pagination",
     // },
 
-    // // Navigation arrows
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next-unique",
+      prevEl: ".swiper-button-prev-unique",
+    },
 
     // And if we need scrollbar
     scrollbar: {
@@ -102,21 +112,42 @@ const VerticalCarousal = () => {
     },
   };
   return (
-    <Container className="hero" fluid>
+    <Container className="hero p-5 pt-2" fluid>
       <Row>
-        <Col lg="2">
+        <Col
+          lg="1"
+          className="text-center d-flex flex-column justify-content-center"
+        >
+          <Button
+            className="bg-white text-dark"
+            startIcon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-chevron-up"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+                />
+              </svg>
+            }
+            onClick={handlePrevious}
+          ></Button>
+
           <Swiper
             ref={thumbsSwiperRef}
             className="thumbs-carousal"
-            modules={[Thumbs, Pagination, Navigation, Scrollbar]}
+            modules={[Thumbs, Navigation, Scrollbar]}
             watchSlidesProgress
             style={{
               "--swiper-navigation-color": "#000",
               "--swiper-pagination-color": "#000",
             }}
-            // onSwiper={(swiper) => {
-            //   setThumbsSwiper(swiper);
-            // }}
+            onSwiper={setSwiperRef}
             // controller={{ control: controlledSwiper }}
             {...thumbsProps}
           >
@@ -138,11 +169,30 @@ const VerticalCarousal = () => {
             <SwiperSlide className="slide">Slide 7</SwiperSlide>
             <SwiperSlide className="slide">Slide 8</SwiperSlide>
           </Swiper>
+          <Button
+            className="bg-white text-dark"
+            onClick={handleNext}
+            startIcon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            }
+          ></Button>
         </Col>
-        <Col lg="5">
+        <Col lg="5" className="d-flex flex-column justify-content-center">
           <Swiper
             className="main-carousal"
-            modules={[Thumbs, Pagination, Navigation, Scrollbar]}
+            modules={[Thumbs, Navigation, Scrollbar]}
             // onSwiper={(swiper) => {
             //   setThumbsSwiper(swiper);
             // }}

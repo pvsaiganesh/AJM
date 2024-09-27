@@ -1,15 +1,18 @@
+@import "../../App.scss";
+
 .hero {
   grid-column-start: 1;
   grid-row-start: 2;
+  background-color: $master-white;
 }
 .main-carousal {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 600px;
   background-color: red;
 }
 .thumbs-carousal {
-  height: 500px;
-  width: 100px;
+  height: 400px;
+  width: 100%;
   background-color: blue;
 }
 .slide-main {
@@ -22,4 +25,8 @@
 .slide {
   height: 100%;
   width: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  text-rendering: auto;
 }
