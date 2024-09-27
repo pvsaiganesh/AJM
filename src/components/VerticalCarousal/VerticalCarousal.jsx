@@ -196,7 +196,7 @@ const VerticalCarousal = () => {
             // onSwiper={(swiper) => {
             //   setThumbsSwiper(swiper);
             // }}
-            thumbs={{ swiper: thumbsSwiper }}
+            thumbs={{ swiper: swiperRef }}
           >
             <SwiperSlide className="slide">
               <Image src={img1} className="thumb-img" />
