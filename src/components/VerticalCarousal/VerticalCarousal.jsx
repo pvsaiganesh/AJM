@@ -23,6 +23,8 @@ import Col from "react-bootstrap/esm/Col";
 import Image from "react-bootstrap/esm/Image";
 import img1 from "../../assets/small-image.svg";
 import img2 from "../../assets/thumb-image.svg";
+import img3 from "../../assets/product-image-1.svg";
+
 import { Button } from "@mui/material";
 
 // import "swiper/scss";
@@ -164,17 +166,17 @@ const VerticalCarousal = () => {
             <SwiperSlide className="slide-main">
               <Image src={img2} />
             </SwiperSlide>
-            <SwiperSlide className="slide-main">Slide 4</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 3</SwiperSlide>
             <SwiperSlide className="slide">
               <Image src={img2} className="thumb-img" />
             </SwiperSlide>
             <SwiperSlide className="slide">
               <Image src={img1} className="thumb-img" />
             </SwiperSlide>
-            <SwiperSlide className="slide">Slide 5</SwiperSlide>
             <SwiperSlide className="slide">Slide 6</SwiperSlide>
             <SwiperSlide className="slide">Slide 7</SwiperSlide>
             <SwiperSlide className="slide">Slide 8</SwiperSlide>
+            <SwiperSlide className="slide">Slide 9</SwiperSlide>
           </Swiper>
           <Button
             className="bg-white text-dark"
@@ -197,24 +199,24 @@ const VerticalCarousal = () => {
           ></Button>
         </Col>
         <Col
-          lg="4"
-          className="d-flex flex-column justify-content-center rounded"
+          lg="7"
+          className="d-flex flex-column justify-content-center rounded p-3"
         >
           <Swiper
             className="main-carousal"
             modules={[Thumbs, Navigation, Scrollbar]}
+            spaceBetween={100}
+            slidesPerView={1}
             // onSwiper={(swiper) => {
             //   setThumbsSwiper(swiper);
             // }}
             // thumbs={{ swiper: swiperRef }}
           >
             <SwiperSlide className="slide">
-              <Image src={img1} className="thumb-img" />
+              <Image src={img3} className="thumb-img" />
             </SwiperSlide>
-            <SwiperSlide className="slide">
-              <Image src={img2} className="thumb-img" />
-            </SwiperSlide>
-            <SwiperSlide className="slide">Slide 4</SwiperSlide>
+            <SwiperSlide className="slide">Slide 2</SwiperSlide>
+            <SwiperSlide className="slide">Slide 3</SwiperSlide>
           </Swiper>
         </Col>
       </Row>
