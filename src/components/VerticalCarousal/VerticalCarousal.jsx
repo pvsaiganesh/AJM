@@ -8,7 +8,7 @@ import {
   Navigation,
   Scrollbar,
   // A11y,
-  // Controller,
+  Controller,
   Thumbs,
 } from "swiper/modules";
 import "swiper/scss";
@@ -79,7 +79,7 @@ const VerticalCarousal = () => {
   const [swiperRef, setSwiperRef] = useState(null);
   // const [controlledSwiper, setControlledSwiper] = useState(null);
   const thumbsSwiperRef = useRef();
-  const [thumbsSwiper, setThumbsSwiper] = useState(thumbsSwiperRef.current);
+  const [thumbsSwiper, setThumbsSwiper] = useState(swiperRef);
   const handlePrevious = useCallback(() => {
     swiperRef?.slidePrev();
   }, [swiperRef]);
@@ -87,6 +87,7 @@ const VerticalCarousal = () => {
   const handleNext = useCallback(() => {
     swiperRef?.slideNext();
   }, [swiperRef]);
+  const [controlledSwiper, setControlledSwiper] = useState(null);
   const thumbsProps = {
     spaceBetween: 10,
     slidesPerView: 4,
@@ -150,12 +151,14 @@ const VerticalCarousal = () => {
           <Swiper
             ref={thumbsSwiperRef}
             className="thumbs-carousal"
-            modules={[Thumbs, Navigation, Scrollbar]}
+            modules={[Controller, Thumbs, Navigation, Scrollbar]}
             watchSlidesProgress
             style={{
               "--swiper-navigation-color": "#000",
               "--swiper-pagination-color": "#000",
             }}
+            controller={{ control: controlledSwiper }}
+            thumbs={{ swiper: thumbsSwiper }}
             onSwiper={setSwiperRef}
             // controller={{ control: controlledSwiper }}
             {...thumbsProps}
@@ -204,19 +207,30 @@ const VerticalCarousal = () => {
         >
           <Swiper
             className="main-carousal"
-            modules={[Thumbs, Navigation, Scrollbar]}
+            modules={[Controller, Thumbs, Navigation, Scrollbar]}
             spaceBetween={100}
             slidesPerView={1}
-            // onSwiper={(swiper) => {
-            //   setThumbsSwiper(swiper);
-            // }}
-            // thumbs={{ swiper: swiperRef }}
+            // onSwiper={setThumbsSwiper}
+            // modules={[Controller]}
+            onSwiper={setControlledSwiper}
           >
-            <SwiperSlide className="slide">
-              <Image src={img3} className="thumb-img" />
+            <SwiperSlide className="slide-main">
+              <Image src={img1} />
             </SwiperSlide>
-            <SwiperSlide className="slide">Slide 2</SwiperSlide>
-            <SwiperSlide className="slide">Slide 3</SwiperSlide>
+            <SwiperSlide className="slide-main">
+              <Image src={img2} />
+            </SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 3</SwiperSlide>
+            <SwiperSlide className="slide">
+              <Image src={img2} className="thumb-img" />
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <Image src={img1} className="thumb-img" />
+            </SwiperSlide>
+            <SwiperSlide className="slide">Slide 6</SwiperSlide>
+            <SwiperSlide className="slide">Slide 7</SwiperSlide>
+            <SwiperSlide className="slide">Slide 8</SwiperSlide>
+            <SwiperSlide className="slide">Slide 9</SwiperSlide>
           </Swiper>
         </Col>
       </Row>
