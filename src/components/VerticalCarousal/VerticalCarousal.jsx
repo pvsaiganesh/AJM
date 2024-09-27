@@ -13,7 +13,7 @@ import {
 } from "swiper/modules";
 import "swiper/scss";
 import "./VerticalCarousal.scss";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "../../../node_modules/swiper/modules/navigation";
 import "../../../node_modules/swiper/modules/pagination";
 import "../../../node_modules/swiper/modules";
@@ -74,7 +74,7 @@ import { Button } from "@mui/material";
 // };
 const VerticalCarousal = () => {
   // store controlled swiper instance
-  const [swiperRef, setSwiperRef] = useState();
+  const [swiperRef, setSwiperRef] = useState(null);
   // const [controlledSwiper, setControlledSwiper] = useState(null);
   const thumbsSwiperRef = useRef();
   const [thumbsSwiper, setThumbsSwiper] = useState(thumbsSwiperRef.current);
@@ -111,6 +111,13 @@ const VerticalCarousal = () => {
       invert: true,
     },
   };
+
+  // useEffect(() => {
+  //   let mySwiper = new Swiper(".swiper-container", {
+  //     ...thumbsProps,
+  //   });
+  //   setSwiperRef(mySwiper);
+  // }, []);
   return (
     <Container className="hero p-5 pt-2" fluid>
       <Row>
@@ -196,7 +203,7 @@ const VerticalCarousal = () => {
             // onSwiper={(swiper) => {
             //   setThumbsSwiper(swiper);
             // }}
-            thumbs={{ swiper: thumbsSwiper }}
+            // thumbs={{ swiper: swiperRef }}
           >
             <SwiperSlide className="slide">
               <Image src={img1} className="thumb-img" />
