@@ -19,7 +19,7 @@ const Header = () => {
     <header className="header p-2">
       <Container fluid="true">
         <Row>
-          <Col className="order-1 order-lg-0" xs="7" lg="12">
+          <Col className="order-1 order-lg-0" xs="6" lg="12">
             <Container fluid="true" className="pt-1 pb-1">
               <Row>
                 <Col lg="4" className="d-none d-lg-block text-start fw-bold">
@@ -42,11 +42,11 @@ const Header = () => {
                 <Col
                   xs="12"
                   lg="4"
-                  className="text-orange text-start text-lg-center fw-bold"
+                  className="text-orange text-center text-lg-center fw-bold"
                 >
                   Get a Free Quote
                 </Col>
-                <Col xs="12" lg="4" className="text-start text-lg-end pe-lg-4">
+                <Col xs="12" lg="4" className="text-center text-lg-end pe-lg-4">
                   <span className="me-2 bg-primary rounded-circle p-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ const Header = () => {
               </Row>
             </Container>
           </Col>
-          <Col className="order-0 order-lg-1" xs="5" lg="12">
+          <Col className="order-0 order-lg-1" xs="6" lg="12">
             <Container fluid="true">
               <Row className="d-flex flex-row justify-content-start align-items-center">
                 <Col xs="12" lg="2">
@@ -175,7 +175,7 @@ const Header = () => {
               </Row>
             </Container>
           </Col>
-          <Col xs="3" className="order-2 d-lg-none" lg="4">
+          <Col xs="2" className="order-2 d-lg-none" lg="4">
             <svg
               type="button"
               data-bs-toggle="offcanvas"
@@ -220,8 +220,8 @@ const Header = () => {
             </div>
           </Col>
           <Col
-            xs="9"
-            className="order-3 d-lg-none d-flex flex-row justify-content-end"
+            xs="10"
+            className="order-3 d-lg-none d-flex flex-row justify-content-center justify-content-md-end"
           >
             <Button variant="contained" className="me-3">
               Login/Register
