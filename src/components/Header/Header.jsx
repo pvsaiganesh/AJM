@@ -16,7 +16,7 @@ import {
 } from "@mui/material";
 const Header = () => {
   return (
-    <header className="header pb-2">
+    <header className="header p-2">
       <Container fluid="true">
         <Row>
           <Col className="order-1 order-lg-0" xs="7" lg="12">

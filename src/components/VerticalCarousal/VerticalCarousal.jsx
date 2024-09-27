@@ -1,7 +1,7 @@
 import "./VerticalCarousal.scss";
 
-const VericalCarousal = () => {
+const VerticalCarousal = () => {
   return <div>VericalCarousal</div>;
 };
 
-export default VericalCarousal;
+export default VerticalCarousal;
