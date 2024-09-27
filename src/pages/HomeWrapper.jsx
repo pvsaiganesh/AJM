@@ -17,7 +17,7 @@ const HomeWrapper = (props) => {
 };
 
 HomeWrapper.propTypes = {
-  children: PropTypes.instanceOf(Element),
+  children: PropTypes.instanceOf(Object),
 };
 
 export default HomeWrapper;

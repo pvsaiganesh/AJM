@@ -13,7 +13,7 @@ function withRouter(Component) {
   return ComponentWithRouterProp;
 }
 withRouter.propTypes = {
-  Component: PropTypes.instanceOf(Element),
+  Component: PropTypes.instanceOf(Object),
 };
 
 export default withRouter;

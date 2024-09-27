@@ -14,7 +14,7 @@ const ScrollToTop = ({ children, location }) => {
   return children;
 };
 ScrollToTop.propTypes = {
-  children: PropTypes.instanceOf(Element),
+  children: PropTypes.instanceOf(Object),
   location: PropTypes.instanceOf(Object),
 };
 
