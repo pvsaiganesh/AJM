@@ -79,7 +79,7 @@ const VerticalCarousal = () => {
   const [swiperRef, setSwiperRef] = useState(null);
   // const [controlledSwiper, setControlledSwiper] = useState(null);
   const thumbsSwiperRef = useRef();
-  const [thumbsSwiper, setThumbsSwiper] = useState(swiperRef);
+  // const [thumbsSwiper, setThumbsSwiper] = useState(swiperRef);
   const handlePrevious = useCallback(() => {
     swiperRef?.slidePrev();
   }, [swiperRef]);
@@ -158,7 +158,7 @@ const VerticalCarousal = () => {
               "--swiper-pagination-color": "#000",
             }}
             controller={{ control: controlledSwiper }}
-            thumbs={{ swiper: thumbsSwiper }}
+            // thumbs={{ swiper: thumbsSwiper }}
             onSwiper={setSwiperRef}
             // controller={{ control: controlledSwiper }}
             {...thumbsProps}
