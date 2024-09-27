@@ -123,7 +123,7 @@ const VerticalCarousal = () => {
       <Row>
         <Col
           lg="1"
-          className="text-center d-flex flex-column justify-content-center"
+          className="text-center d-flex flex-column justify-content-center rounded"
         >
           <Button
             className="bg-white text-dark"
@@ -196,7 +196,10 @@ const VerticalCarousal = () => {
             }
           ></Button>
         </Col>
-        <Col lg="5" className="d-flex flex-column justify-content-center">
+        <Col
+          lg="4"
+          className="d-flex flex-column justify-content-center rounded"
+        >
           <Swiper
             className="main-carousal"
             modules={[Thumbs, Navigation, Scrollbar]}
