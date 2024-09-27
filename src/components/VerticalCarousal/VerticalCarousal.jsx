@@ -77,7 +77,7 @@ const VerticalCarousal = () => {
   const [swiperRef, setSwiperRef] = useState();
   // const [controlledSwiper, setControlledSwiper] = useState(null);
   const thumbsSwiperRef = useRef();
-  // const [thumbsSwiper, setThumbsSwiper] = useState(thumbsSwiperRef.current);
+  const [thumbsSwiper, setThumbsSwiper] = useState(thumbsSwiperRef.current);
   const handlePrevious = useCallback(() => {
     swiperRef?.slidePrev();
   }, [swiperRef]);
