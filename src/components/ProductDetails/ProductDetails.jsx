@@ -35,7 +35,7 @@ import {
 } from "@mui/material";
 import "../../App.scss";
 import brand from "../../assets/brand.svg";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 // import "swiper/scss";
 // import "swiper/scss/navigation";

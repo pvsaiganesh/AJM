@@ -9,7 +9,7 @@ import customer from "../../../assets/customer.svg";
 
 const Testimonial = () => {
   return (
-    <Container fluid="true" className="p-5 testimonial-bg text-center">
+    <Container fluid="true" className="p-1 p-md-5 testimonial-bg text-center">
       <Typography variant="h6" className="text-orange">
         Client Testimonial
       </Typography>
