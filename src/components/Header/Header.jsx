@@ -16,13 +16,17 @@ import {
 } from "@mui/material";
 const Header = () => {
   return (
-    <header className="header p-2">
+    <header className="header p-1">
       <Container fluid="true">
         <Row>
-          <Col className="order-1 order-md-0" xs="6" md="12">
+          <Col className="order-1 order-md-0" xs="8" md="12">
             <Container fluid="true" className="pt-1 pb-1">
               <Row>
-                <Col md="4" className="d-none d-md-block text-start fw-bold">
+                <Col
+                  xs="12"
+                  md="4"
+                  className="d-none d-md-block text-start fw-bold"
+                >
                   {/* <span className="me-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,11 +46,11 @@ const Header = () => {
                 <Col
                   xs="12"
                   md="4"
-                  className="text-orange text-center text-md-center fw-bold"
+                  className="text-orange text-start text-md-center fw-bold"
                 >
                   Get a Free Quote
                 </Col>
-                <Col xs="12" md="4" className="text-center text-md-end pe-md-4">
+                <Col xs="12" md="4" className="text-start text-md-end pe-md-4">
                   <span className="me-2 bg-primary rounded-circle p-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +71,7 @@ const Header = () => {
               </Row>
             </Container>
           </Col>
-          <Col className="order-0 order-md-1" xs="6" md="12">
+          <Col className="order-0 order-md-1" xs="4" md="12">
             <Container fluid="true">
               <Row className="d-flex flex-row justify-content-start align-items-center">
                 <Col xs="12" md="2">
@@ -164,8 +168,9 @@ const Header = () => {
                   </Navbar>
                 </Col>
                 <Col
+                  xs="8"
                   md="3"
-                  className="d-none d-md-block d-flex flex-column justify-content-end"
+                  className="d-none d-md-block d-flex flex-column justify-content-start justify-content-md-end"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +245,7 @@ const Header = () => {
           </Col>
           <Col
             xs="10"
-            className="order-3 d-md-none d-flex flex-row justify-content-center justify-content-md-end"
+            className="order-3 d-md-none d-flex flex-row justify-content-start justify-content-md-end"
           >
             <Button variant="contained" className="me-3">
               Login/Register
