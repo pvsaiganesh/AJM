@@ -6,7 +6,7 @@ import { PropTypes } from "prop-types";
 import Container from "react-bootstrap/esm/Container";
 
 export const Products = ({ md, children }) => {
-  console.log(children);
+  // console.log(children);
   return (
     <Container fluid="true">
       <Row>
