@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <Container className="footer-bg p-5" fluid="true">
         <Row>
-          <Col lg="12" className="text-center pb-5">
+          <Col md="12" className="text-center pb-5">
             <Image
               loading="lazy"
               src={Logo}
@@ -22,9 +22,9 @@ const Footer = () => {
               width="350px"
             />
           </Col>
-          <Col lg="12" className="text-white pb-3">
+          <Col md="12" className="text-white pb-3">
             <Row>
-              <Col lg="3" className="pb-3">
+              <Col md="3" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   About AJM
                 </Typography>
@@ -47,7 +47,7 @@ const Footer = () => {
                   AJM@gmail.com
                 </a>
               </Col>
-              <Col xs="6" lg="2" className="pb-3">
+              <Col xs="6" md="2" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   Pages
                 </Typography>
@@ -58,7 +58,7 @@ const Footer = () => {
                   <li className="pb-3">Contact Us</li>
                 </ul>
               </Col>
-              <Col xs="6" lg="2" className="pb-3">
+              <Col xs="6" md="2" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   My Account
                 </Typography>
@@ -70,7 +70,7 @@ const Footer = () => {
                 </ul>
               </Col>
 
-              <Col lg="2" className="pb-3">
+              <Col md="2" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   Help
                 </Typography>
@@ -81,7 +81,7 @@ const Footer = () => {
                   <li className="pb-3">Privacy Policy</li>
                 </ul>
               </Col>
-              <Col lg="3" className="pb-3">
+              <Col md="3" className="pb-3">
                 <Typography variant="h5" className="pb-3">
                   Instagram
                 </Typography>
@@ -99,9 +99,9 @@ const Footer = () => {
       </Container>
       <Container fluid="true" className="bg-orange">
         <Row className="d-flex flex-row justify-content-between text-white p-3 text-center">
-          <Col lg="4 text-md-start">Social Links</Col>
-          <Col lg="4 text-md-center">AJM © 2024. All Rights Reserved</Col>
-          <Col lg="4 text-md-end">Designed & Developed by Vasmi Group</Col>
+          <Col md="4 text-md-start">Social Links</Col>
+          <Col md="4 text-md-center">AJM © 2024. All Rights Reserved</Col>
+          <Col md="4 text-md-end">Designed & Developed by Vasmi Group</Col>
         </Row>
       </Container>
     </>

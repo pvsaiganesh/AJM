@@ -9,7 +9,7 @@ const FeaturedProducts = () => {
   return (
     <Container fluid="true" className="text-center p-5">
       <Row>
-        <Col xs="!2" lg="12">
+        <Col xs="!2" md="12">
           <Typography variant="h6" className="fs-6 text-uppercase text-orange">
             Products
           </Typography>
@@ -17,8 +17,8 @@ const FeaturedProducts = () => {
             Our Featured Products
           </Typography>
         </Col>
-        <Products lg="3">
-          <Col xs="12" lg="3">
+        <Products md="3">
+          <Col xs="12" md="3">
             <Container
               fluid="true"
               className="banner-side-image p-0 d-flex flex-column rounded justify-content-start"

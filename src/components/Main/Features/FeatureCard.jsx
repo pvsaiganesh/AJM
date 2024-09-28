@@ -7,7 +7,7 @@ const FeatureCard = (item) => {
     <Col
       xs="12"
       sm="6"
-      lg="3"
+      md="3"
       className="feature-card d-flex flex-row justify-content-center p-3 p-md-0"
     >
       <div className=" pe-5 align-self-center">

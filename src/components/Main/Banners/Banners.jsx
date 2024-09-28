@@ -8,7 +8,7 @@ const Banners = () => {
   return (
     <Container fluid="true" className="text-white p-5 rounded banners-shadow">
       <Row>
-        <Col xs="12" lg="4" className="p-1 pb-3">
+        <Col xs="12" md="4" className="p-1 pb-3">
           <Container
             fluid
             className="banner-image p-0 d-flex flex-column rounded justify-content-end"
@@ -45,7 +45,7 @@ const Banners = () => {
             </Container>
           </Container>
         </Col>
-        <Col xs="12" lg="4" className="p-1 pb-3">
+        <Col xs="12" md="4" className="p-1 pb-3">
           <Container
             fluid
             className="banner-image p-0 d-flex flex-column rounded justify-content-end"
@@ -82,7 +82,7 @@ const Banners = () => {
             </Container>
           </Container>
         </Col>
-        <Col xs="12" lg="4" className="p-1 pb-3">
+        <Col xs="12" md="4" className="p-1 pb-3">
           <Container
             fluid
             className="banner-image p-0 d-flex flex-column rounded justify-content-end"

@@ -5,7 +5,7 @@ import { productsInfo } from "./products-constants";
 import { PropTypes } from "prop-types";
 import Container from "react-bootstrap/esm/Container";
 
-export const Products = ({ lg, children }) => {
+export const Products = ({ md, children }) => {
   console.log(children);
   return (
     <Container fluid="true">
@@ -16,7 +16,7 @@ export const Products = ({ lg, children }) => {
             <Col
               xs="12"
               sm="6"
-              lg={lg ? lg : "3"}
+              md={md ? md : "3"}
               key={product.id}
               className="p-2"
             >
@@ -29,7 +29,7 @@ export const Products = ({ lg, children }) => {
   );
 };
 Products.propTypes = {
-  lg: PropTypes.string,
+  md: PropTypes.string,
   children: PropTypes.instanceOf(Object),
 };
 

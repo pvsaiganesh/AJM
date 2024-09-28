@@ -10,18 +10,18 @@ const FeaturedSection = ({ title }) => {
   return (
     <Container fluid="true">
       <Row>
-        <Col lg="12" className="pb-3">
+        <Col md="12" className="pb-3">
           <Typography variant="h6">{title}</Typography>
         </Col>
-        <Col lg="12">
+        <Col md="12">
           <FeaturedSectionCard />
         </Col>
 
-        <Col lg="12">
+        <Col md="12">
           <FeaturedSectionCard />
         </Col>
 
-        <Col lg="12">
+        <Col md="12">
           <FeaturedSectionCard />
         </Col>
       </Row>

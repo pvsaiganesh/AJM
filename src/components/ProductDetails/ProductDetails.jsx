@@ -149,7 +149,7 @@ const ProductDetails = () => {
     <Container className="hero p-5 pt-2" fluid="true">
       <Row>
         <Col
-          lg="1"
+          md="1"
           xs="3"
           className="text-center d-flex flex-column justify-content-center rounded"
         >
@@ -227,7 +227,7 @@ const ProductDetails = () => {
           ></Button>
         </Col>
         <Col
-          lg="5"
+          md="5"
           xs="9"
           className="d-flex flex-column justify-content-center rounded ps-0 p-3"
         >
@@ -259,11 +259,11 @@ const ProductDetails = () => {
             <SwiperSlide className="slide">Slide 9</SwiperSlide>
           </Swiper>
         </Col>
-        <Col xs="12" lg="6" className=" ps-0 p-3">
+        <Col xs="12" md="6" className=" ps-0 p-3">
           <ThemeProvider theme={theme}>
             <Container>
               <Row>
-                <Col lg="12">
+                <Col md="12">
                   <Typography variant="h1" className="fs-2 fw-bold pt-3 pb-3">
                     Chinese Tiles
                     <Button className="ms-3" variant="contained" color="info">
@@ -277,7 +277,7 @@ const ProductDetails = () => {
                   </Typography>
 
                   <Row>
-                    <Col lg="6">
+                    <Col md="6">
                       <FormControl fullWidth>
                         <InputLabel id="demo-simple-select-label">
                           Location
@@ -295,29 +295,29 @@ const ProductDetails = () => {
                         </Select>
                       </FormControl>
                     </Col>
-                    <Col lg="3" className="text-end">
+                    <Col md="3" className="text-end">
                       <Typography className="fs-4 text-decoration-line-through text-reset">
                         ₹4800
                       </Typography>
                     </Col>
-                    <Col lg="3" className="text-start">
+                    <Col md="3" className="text-start">
                       <Typography className="fs-4 fw-bold" color="text">
                         ₹1728
                       </Typography>
                     </Col>
                   </Row>
                   <Row className="pt-3 pb-3">
-                    <Col lg="3">
+                    <Col md="3">
                       <Row>
-                        <Col lg="6" className="text-end">
+                        <Col md="6" className="text-end">
                           Brand:
                         </Col>
-                        <Col lg="6" className="text-start">
+                        <Col md="6" className="text-start">
                           <Image fluid src={brand} loading="lazy" />
                         </Col>
                       </Row>
                     </Col>
-                    <Col lg="9" className="text-end">
+                    <Col md="9" className="text-end">
                       <Button className=" bg-orange p-3 rounded-circle">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -332,7 +332,7 @@ const ProductDetails = () => {
                       </Button>
                     </Col>
                   </Row>
-                  <Col lg="12">
+                  <Col md="12">
                     <Typography variant="h6">
                       Class aptent taciti sociosqu ad litora torquent per
                       conubia nostra, per inceptos himenaeos. Nulla nibh diam,
@@ -340,11 +340,11 @@ const ProductDetails = () => {
                       magna a consequat pulvinar.
                     </Typography>
                   </Col>
-                  <Col lg="12">
+                  <Col md="12">
                     <Row className="shadow pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded">
-                      <Col lg="4">
+                      <Col md="4">
                         <Row className="text-center">
-                          <Col lg="5">
+                          <Col md="5">
                             <Button>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -360,10 +360,10 @@ const ProductDetails = () => {
                             </Button>
                           </Col>
 
-                          <Col lg="2">
+                          <Col md="2">
                             <Typography variant="span">5</Typography>
                           </Col>
-                          <Col lg="5">
+                          <Col md="5">
                             <Button>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -381,7 +381,7 @@ const ProductDetails = () => {
                         </Row>
                       </Col>
 
-                      <Col lg="6">
+                      <Col md="6">
                         <Button
                           variant="contained"
                           className="bg-orange rounded-pill"
@@ -391,7 +391,7 @@ const ProductDetails = () => {
                           Add to Cart
                         </Button>
                       </Col>
-                      <Col lg="2">
+                      <Col md="2">
                         <Button
                           className="rounded-circle p-3 "
                           variant="contained"
@@ -410,7 +410,7 @@ const ProductDetails = () => {
                       </Col>
                     </Row>
                   </Col>
-                  <Col lg="12">
+                  <Col md="12">
                     <Typography>
                       <Typography variant="span" className="fw-bold">
                         Category:{" "}
@@ -418,7 +418,7 @@ const ProductDetails = () => {
                       Sand
                     </Typography>
                   </Col>
-                  <Col lg="12">
+                  <Col md="12">
                     <Typography>
                       <Typography variant="span" className="fw-bold">
                         Tag:{" "}

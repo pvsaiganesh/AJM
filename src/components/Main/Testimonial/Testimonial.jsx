@@ -15,7 +15,7 @@ const Testimonial = () => {
       </Typography>
       <Typography variant="h4">What our Clients Say</Typography>
       <Row className="pt-5">
-        <Col lg={{ span: 4, offset: 0 }} className="pb-3">
+        <Col md={{ span: 4, offset: 0 }} className="pb-3">
           <Container
             fluid="true"
             className="p-3 text-start d-flex flex-column bg-white"
@@ -31,21 +31,21 @@ const Testimonial = () => {
             </Typography>
             <Container fluid="true" className="pt-2">
               <Row>
-                <Col lg="6" className="d-flex flex-row">
+                <Col md="6" className="d-flex flex-row">
                   <Image loading="lazy" src={customer} />
                   <Container>
                     <Typography className="name">Robert</Typography>
                     <Typography className="text-orange">Customer</Typography>
                   </Container>
                 </Col>
-                <Col lg="6" className="text-end">
+                <Col md="6" className="text-end">
                   <Rating name="read-only" defaultValue={5} readOnly />
                 </Col>
               </Row>
             </Container>
           </Container>
         </Col>
-        <Col lg={{ span: 4, offset: 0 }} className="pb-3">
+        <Col md={{ span: 4, offset: 0 }} className="pb-3">
           <Container
             fluid="true"
             className="p-3 text-start d-flex flex-column bg-white"
@@ -61,21 +61,21 @@ const Testimonial = () => {
             </Typography>
             <Container className="pt-2">
               <Row>
-                <Col lg="6" className="d-flex flex-row">
+                <Col md="6" className="d-flex flex-row">
                   <Image loading="lazy" src={customer} />
                   <Container>
                     <Typography className="name">Robert</Typography>
                     <Typography className="text-orange">Customer</Typography>
                   </Container>
                 </Col>
-                <Col lg="6" className="text-end">
+                <Col md="6" className="text-end">
                   <Rating name="read-only" defaultValue={5} readOnly />
                 </Col>
               </Row>
             </Container>
           </Container>
         </Col>
-        <Col lg={{ span: 4, offset: 0 }} className="pb-3">
+        <Col md={{ span: 4, offset: 0 }} className="pb-3">
           <Container
             fluid="true"
             className="p-3 text-start d-flex flex-column bg-white"
@@ -91,14 +91,14 @@ const Testimonial = () => {
             </Typography>
             <Container className="pt-2">
               <Row>
-                <Col lg="6" className="d-flex flex-row">
+                <Col md="6" className="d-flex flex-row">
                   <Image loading="lazy" src={customer} />
                   <Container>
                     <Typography className="name">Robert</Typography>
                     <Typography className="text-orange">Customer</Typography>
                   </Container>
                 </Col>
-                <Col lg="6" className="text-end">
+                <Col md="6" className="text-end">
                   <Rating name="read-only" defaultValue={5} readOnly />
                 </Col>
               </Row>
