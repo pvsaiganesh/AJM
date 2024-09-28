@@ -24,8 +24,18 @@ import Image from "react-bootstrap/esm/Image";
 import img1 from "../../assets/small-image.svg";
 import img2 from "../../assets/thumb-image.svg";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Button, Rating, Typography } from "@mui/material";
+import {
+  Button,
+  Rating,
+  Typography,
+  Select,
+  FormControl,
+  InputLabel,
+  MenuItem,
+} from "@mui/material";
 import "../../App.scss";
+import brand from "../../assets/brand.svg";
+
 // import "swiper/scss";
 // import "swiper/scss/navigation";
 // import "swiper/scss/pagination";
@@ -140,6 +150,7 @@ const ProductDetails = () => {
       <Row>
         <Col
           lg="1"
+          xs="3"
           className="text-center d-flex flex-column justify-content-center rounded"
         >
           <Button
@@ -217,6 +228,7 @@ const ProductDetails = () => {
         </Col>
         <Col
           lg="6"
+          xs="9"
           className="d-flex flex-column justify-content-center rounded ps-0 p-3"
         >
           <Swiper
@@ -247,7 +259,7 @@ const ProductDetails = () => {
             <SwiperSlide className="slide">Slide 9</SwiperSlide>
           </Swiper>
         </Col>
-        <Col lg="5" className=" ps-0 p-3">
+        <Col xs="12" lg="5" className=" ps-0 p-3">
           <ThemeProvider theme={theme}>
             <Container>
               <Row>
@@ -263,6 +275,79 @@ const ProductDetails = () => {
                     {" "}
                     <Rating value={5} readOnly className="pe-4" />4 Reviews
                   </Typography>
+
+                  <Row>
+                    <Col lg="6">
+                      <FormControl fullWidth>
+                        <InputLabel id="demo-simple-select-label">
+                          Location
+                        </InputLabel>
+                        <Select
+                          labelId="demo-simple-select-label"
+                          id="demo-simple-select"
+                          // value={40}
+                          label="Age"
+                          // onChange={handleChange}
+                        >
+                          <MenuItem value={10}>Ten</MenuItem>
+                          <MenuItem value={20}>Twenty</MenuItem>
+                          <MenuItem value={30}>Thirty</MenuItem>
+                        </Select>
+                      </FormControl>
+                    </Col>
+                    <Col lg="3" className="text-end">
+                      <Typography className="fs-4 text-decoration-line-through text-reset">
+                        ₹4800
+                      </Typography>
+                    </Col>
+                    <Col lg="3" className="text-start">
+                      <Typography className="fs-4 fw-bold" color="text">
+                        ₹1728
+                      </Typography>
+                    </Col>
+                  </Row>
+                  <Row className="pt-3 pb-3">
+                    <Col lg="3">
+                      <Row>
+                        <Col lg="6" className="text-end">
+                          Brand:
+                        </Col>
+                        <Col lg="6" className="text-start">
+                          <Image fluid src={brand} loading="lazy" />
+                        </Col>
+                      </Row>
+                    </Col>
+                    <Col lg="9" className="text-end">
+                      <span className=" bg-orange p-3 rounded-circle">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="white"
+                          className="bi bi-share"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
+                        </svg>
+                      </span>
+                    </Col>
+                  </Row>
+                  <Col lg="12">
+                    <Typography variant="h6">
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Nulla nibh diam,
+                      blandit vel consequat nec, ultrices et ipsum. Nulla varius
+                      magna a consequat pulvinar.
+                    </Typography>
+                  </Col>
+                  <Col lg="12">
+                    <Row>
+                      <Col lg="3"></Col>
+
+                      <Col lg="9"></Col>
+                      <Col lg="1"></Col>
+                    </Row>
+                  </Col>
                 </Col>
               </Row>
             </Container>
