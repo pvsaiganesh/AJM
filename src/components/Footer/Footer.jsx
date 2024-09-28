@@ -7,23 +7,20 @@ import Image from "react-bootstrap/esm/Image";
 import "./Footer.scss";
 import { Typography } from "@mui/material";
 import { InstagramEmbed } from "react-social-media-embed";
-import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
       <Container className="footer-bg p-5" fluid="true">
         <Row>
           <Col lg="12" className="text-center pb-5">
-            <Link to="/">
-              <Image
-                loading="lazy"
-                src={Logo}
-                fluid="true"
-                thumbnail
-                height="350px"
-                width="350px"
-              />
-            </Link>
+            <Image
+              loading="lazy"
+              src={Logo}
+              fluid="true"
+              thumbnail
+              height="350px"
+              width="350px"
+            />
           </Col>
           <Col lg="12" className="text-white pb-3">
             <Row>
