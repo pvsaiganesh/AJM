@@ -10,7 +10,7 @@ const FeaturedSectionCard = () => {
   return (
     <Container fluid="true" className="shadow mb-3">
       <Row className="d-flex flex-row justify-content-between">
-        <Col xs="4" md="6" className="p-2">
+        <Col xs="4" md="6" className="text-center p-1">
           <Image loading="lazy" src={image} />
         </Col>
         <Col xs="8" md="6" className="align-self-center">

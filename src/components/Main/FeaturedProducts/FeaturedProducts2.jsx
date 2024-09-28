@@ -13,10 +13,10 @@ const FeaturedProducts2 = () => {
           <FeaturedSection title="Deals" />
         </Col>
         <Col xs="12" md="3">
-          <FeaturedSection title="Deals" />
+          <FeaturedSection title="Top Deals" />
         </Col>
         <Col xs="12" md="3">
-          <FeaturedSection title="Deals" />
+          <FeaturedSection title="Best Sellers" />
         </Col>
         <Col xs="12" md="3">
           <Container
