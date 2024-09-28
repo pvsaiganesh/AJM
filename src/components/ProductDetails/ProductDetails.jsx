@@ -227,7 +227,7 @@ const ProductDetails = () => {
           ></Button>
         </Col>
         <Col
-          lg="6"
+          lg="5"
           xs="9"
           className="d-flex flex-column justify-content-center rounded ps-0 p-3"
         >
@@ -259,7 +259,7 @@ const ProductDetails = () => {
             <SwiperSlide className="slide">Slide 9</SwiperSlide>
           </Swiper>
         </Col>
-        <Col xs="12" lg="5" className=" ps-0 p-3">
+        <Col xs="12" lg="6" className=" ps-0 p-3">
           <ThemeProvider theme={theme}>
             <Container>
               <Row>
@@ -341,12 +341,89 @@ const ProductDetails = () => {
                     </Typography>
                   </Col>
                   <Col lg="12">
-                    <Row>
-                      <Col lg="3"></Col>
+                    <Row className="shadow pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded">
+                      <Col lg="4">
+                        <Row className="text-center">
+                          <Col lg="5">
+                            <Button>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="currentColor"
+                                className="bi bi-dash-circle"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                              </svg>
+                            </Button>
+                          </Col>
 
-                      <Col lg="9"></Col>
-                      <Col lg="1"></Col>
+                          <Col lg="2">
+                            <Typography variant="span">5</Typography>
+                          </Col>
+                          <Col lg="5">
+                            <Button>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="currentColor"
+                                className="bi bi-plus-circle"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                              </svg>
+                            </Button>
+                          </Col>
+                        </Row>
+                      </Col>
+
+                      <Col lg="6">
+                        <Button
+                          variant="contained"
+                          className="bg-orange rounded-pill"
+                          fullWidth
+                        >
+                          Add to Cart
+                        </Button>
+                      </Col>
+                      <Col lg="2">
+                        <Button
+                          className="rounded-circle p-3"
+                          variant="contained"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            className="bi bi-heart"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                          </svg>
+                        </Button>
+                      </Col>
                     </Row>
+                  </Col>
+                  <Col lg="12">
+                    <Typography>
+                      <Typography variant="span" className="fw-bold">
+                        Category:{" "}
+                      </Typography>
+                      Sand
+                    </Typography>
+                  </Col>
+                  <Col lg="12">
+                    <Typography>
+                      <Typography variant="span" className="fw-bold">
+                        Tag:{" "}
+                      </Typography>
+                      Best sand in vizag Construction Material
+                    </Typography>
                   </Col>
                 </Col>
               </Row>
