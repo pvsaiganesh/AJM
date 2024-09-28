@@ -13,11 +13,12 @@ const ContactInfo = () => {
   return (
     <Container fluid="true" className="pt-5 pb-5">
       <Row>
-        <Col lg="5">
-          <Image src={ContactUsImage} fluid="true" />
+        <Col xs="12" lg="5">
+          <Image loading="lazy" src={ContactUsImage} fluid="true" />
         </Col>
         <Col
           lg="2"
+          xs="12"
           className="d-flex flex-row justify-content-center align-items-center"
         >
           <Container>
@@ -26,7 +27,7 @@ const ContactInfo = () => {
                 <Container fluid="true" className="border-bottom">
                   <Row>
                     <Col lg="12" className="pb-3">
-                      <Image src={icon1} />
+                      <Image loading="lazy" src={icon1} />
                     </Col>
                     <Col lg="12" className="pb-3">
                       <Typography variant="h-6">
@@ -40,7 +41,7 @@ const ContactInfo = () => {
                 <Container fluid="true" className="border-bottom">
                   <Row>
                     <Col lg="12" className="pb-3">
-                      <Image src={icon2} />
+                      <Image loading="lazy" src={icon2} />
                     </Col>
                     <Col lg="12" className="pb-3">
                       <Typography variant="h-6">
@@ -54,7 +55,7 @@ const ContactInfo = () => {
                 <Container fluid="true" className="border-bottom">
                   <Row>
                     <Col lg="12" className="pb-3">
-                      <Image src={icon3} />
+                      <Image loading="lazy" src={icon3} />
                     </Col>
                     <Col lg="12" className="pb-3">
                       <Typography variant="h-6">
@@ -67,7 +68,7 @@ const ContactInfo = () => {
             </Row>
           </Container>
         </Col>
-        <Col lg="5" className="p-5 pt-0 ">
+        <Col xs="!2" lg="5" className="p-5 pt-0 ">
           <Container fluid="true">
             <Typography variant="h5" className="pb-3">
               Contact Us

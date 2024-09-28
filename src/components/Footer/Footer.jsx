@@ -14,6 +14,7 @@ const Footer = () => {
         <Row>
           <Col lg="12" className="text-center pb-5">
             <Image
+              loading="lazy"
               src={Logo}
               fluid="true"
               thumbnail
@@ -97,10 +98,10 @@ const Footer = () => {
         </Row>
       </Container>
       <Container fluid="true" className="bg-orange">
-        <Row className="d-flex flex-row justify-content-between text-white p-3">
-          <Col lg="4 text-start">Social Links</Col>
-          <Col lg="4 text-center">AJM © 2024. All Rights Reserved</Col>
-          <Col lg="4 text-end">Designed & Developed by Vasmi Group</Col>
+        <Row className="d-flex flex-row justify-content-between text-white p-3 text-center">
+          <Col lg="4 text-md-start">Social Links</Col>
+          <Col lg="4 text-md-center">AJM © 2024. All Rights Reserved</Col>
+          <Col lg="4 text-md-end">Designed & Developed by Vasmi Group</Col>
         </Row>
       </Container>
     </>

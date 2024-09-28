@@ -12,7 +12,12 @@ const FeatureCard = (item) => {
     >
       <div className=" pe-5 align-self-center">
         <span className="rounded-circle p-4 feature-image">
-          <Image className="feature-icon" src={item.icon} fluid="true" />
+          <Image
+            loading="lazy"
+            className="feature-icon"
+            src={item.icon}
+            fluid="true"
+          />
         </span>
       </div>
       <div className=" align-self-center feature-text">

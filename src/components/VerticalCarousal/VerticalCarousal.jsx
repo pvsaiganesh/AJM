@@ -163,17 +163,17 @@ const VerticalCarousal = () => {
             {...thumbsProps}
           >
             <SwiperSlide className="slide-main">
-              <Image src={img1} />
+              <Image loading="lazy" src={img1} />
             </SwiperSlide>
             <SwiperSlide className="slide-main">
-              <Image src={img2} />
+              <Image loading="lazy" src={img2} />
             </SwiperSlide>
             <SwiperSlide className="slide-main">Slide 3</SwiperSlide>
             <SwiperSlide className="slide">
-              <Image src={img2} className="thumb-img" />
+              <Image loading="lazy" src={img2} className="thumb-img" />
             </SwiperSlide>
             <SwiperSlide className="slide">
-              <Image src={img1} className="thumb-img" />
+              <Image loading="lazy" src={img1} className="thumb-img" />
             </SwiperSlide>
             <SwiperSlide className="slide">Slide 6</SwiperSlide>
             <SwiperSlide className="slide">Slide 7</SwiperSlide>
@@ -214,17 +214,17 @@ const VerticalCarousal = () => {
             onSwiper={setControlledSwiper}
           >
             <SwiperSlide className="slide-main">
-              <Image src={img1} />
+              <Image loading="lazy" src={img1} />
             </SwiperSlide>
             <SwiperSlide className="slide-main">
-              <Image src={img2} />
+              <Image loading="lazy" src={img2} />
             </SwiperSlide>
             <SwiperSlide className="slide-main">Slide 3</SwiperSlide>
             <SwiperSlide className="slide">
-              <Image src={img2} className="thumb-img" />
+              <Image loading="lazy" src={img2} className="thumb-img" />
             </SwiperSlide>
             <SwiperSlide className="slide">
-              <Image src={img1} className="thumb-img" />
+              <Image loading="lazy" src={img1} className="thumb-img" />
             </SwiperSlide>
             <SwiperSlide className="slide">Slide 6</SwiperSlide>
             <SwiperSlide className="slide">Slide 7</SwiperSlide>

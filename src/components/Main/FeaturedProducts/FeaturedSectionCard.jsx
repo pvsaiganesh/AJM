@@ -11,7 +11,7 @@ const FeaturedSectionCard = () => {
     <Container className="shadow mb-3">
       <Row className="d-flex flex-row justify-content-between">
         <Col xs="4" lg="6" className="p-2">
-          <Image src={image} />
+          <Image loading="lazy" src={image} />
         </Col>
         <Col xs="8" lg="6" className="align-self-center">
           <Typography className="fs-6">Sands</Typography>

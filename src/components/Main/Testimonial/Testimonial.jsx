@@ -18,7 +18,7 @@ const Testimonial = () => {
         <Col lg={{ span: 4, offset: 0 }} className="pb-3">
           <Container className="p-3 text-start d-flex flex-column bg-white">
             <Typography variant="h-6" className="pb-2">
-              <Image src={invertedComma} />
+              <Image loading="lazy" src={invertedComma} />
             </Typography>
             <Typography variant="h-6" className="pb-2">
               The concrete mix was top-notch, providing excellent strength and
@@ -29,7 +29,7 @@ const Testimonial = () => {
             <Container className="pt-2">
               <Row>
                 <Col lg="6" className="d-flex flex-row">
-                  <Image src={customer} />
+                  <Image loading="lazy" src={customer} />
                   <Container>
                     <Typography className="name">Robert</Typography>
                     <Typography className="text-orange">Customer</Typography>
@@ -45,7 +45,7 @@ const Testimonial = () => {
         <Col lg={{ span: 4, offset: 0 }} className="pb-3">
           <Container className="p-3 text-start d-flex flex-column bg-white">
             <Typography variant="h-6" className="pb-2">
-              <Image src={invertedComma} />
+              <Image loading="lazy" src={invertedComma} />
             </Typography>
             <Typography variant="h-6" className="pb-2">
               The concrete mix was top-notch, providing excellent strength and
@@ -56,7 +56,7 @@ const Testimonial = () => {
             <Container className="pt-2">
               <Row>
                 <Col lg="6" className="d-flex flex-row">
-                  <Image src={customer} />
+                  <Image loading="lazy" src={customer} />
                   <Container>
                     <Typography className="name">Robert</Typography>
                     <Typography className="text-orange">Customer</Typography>
@@ -72,7 +72,7 @@ const Testimonial = () => {
         <Col lg={{ span: 4, offset: 0 }} className="pb-3">
           <Container className="p-3 text-start d-flex flex-column bg-white">
             <Typography variant="h-6" className="pb-2">
-              <Image src={invertedComma} />
+              <Image loading="lazy" src={invertedComma} />
             </Typography>
             <Typography variant="h-6" className="pb-2">
               The concrete mix was top-notch, providing excellent strength and
@@ -83,7 +83,7 @@ const Testimonial = () => {
             <Container className="pt-2">
               <Row>
                 <Col lg="6" className="d-flex flex-row">
-                  <Image src={customer} />
+                  <Image loading="lazy" src={customer} />
                   <Container>
                     <Typography className="name">Robert</Typography>
                     <Typography className="text-orange">Customer</Typography>

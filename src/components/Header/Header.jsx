@@ -72,7 +72,13 @@ const Header = () => {
               <Row className="d-flex flex-row justify-content-start align-items-center">
                 <Col xs="12" lg="2">
                   <Link to="/">
-                    <Image className="logo" src={Logo} fluid="true" rounded />
+                    <Image
+                      loading="lazy"
+                      className="logo"
+                      src={Logo}
+                      fluid="true"
+                      rounded
+                    />
                   </Link>
                 </Col>
                 <Col className="d-none d-lg-block" xs="12" lg="3">
