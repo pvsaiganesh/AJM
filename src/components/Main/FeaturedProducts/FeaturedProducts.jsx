@@ -9,7 +9,7 @@ const FeaturedProducts = () => {
   return (
     <Container fluid="true" className="text-center p-5">
       <Row>
-        <Col lg="12">
+        <Col xs="!2" lg="12">
           <Typography variant="h6" className="text-uppercase text-orange">
             Products
           </Typography>

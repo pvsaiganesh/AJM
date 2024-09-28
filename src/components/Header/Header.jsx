@@ -97,7 +97,7 @@ const Header = () => {
                     renderInput={(params) => (
                       <InputBase
                         ref={params.InputProps.ref}
-                        {...params}
+                        {...params.InputProps}
                         size="small"
                         placeholder="Search here..."
                         startAdornment={

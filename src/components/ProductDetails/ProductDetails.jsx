@@ -12,7 +12,7 @@ import {
   Thumbs,
 } from "swiper/modules";
 import "swiper/scss";
-import "./VerticalCarousal.scss";
+import "./ProductDetails.scss";
 import { useCallback, useRef, useState } from "react";
 import "../../../node_modules/swiper/modules/navigation";
 import "../../../node_modules/swiper/modules/pagination";
@@ -23,12 +23,13 @@ import Col from "react-bootstrap/esm/Col";
 import Image from "react-bootstrap/esm/Image";
 import img1 from "../../assets/small-image.svg";
 import img2 from "../../assets/thumb-image.svg";
-
-import { Button } from "@mui/material";
-
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Button, Rating, Typography } from "@mui/material";
+import "../../App.scss";
 // import "swiper/scss";
 // import "swiper/scss/navigation";
 // import "swiper/scss/pagination";
+// import ProductDetails from './../VerticalCarousal/VerticalCarousal';
 // const images = [
 //   {
 //     src: "https://picsum.photos/320/240?v1",
@@ -73,7 +74,21 @@ import { Button } from "@mui/material";
 //     </Swiper>
 //   );
 // };
-const VerticalCarousal = () => {
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#008ecc33",
+    },
+    text: {
+      main: "#1d6383",
+    },
+    secondary: {
+      main: "#666666",
+    },
+  },
+});
+const ProductDetails = () => {
   // store controlled swiper instance
   const [swiperRef, setSwiperRef] = useState(null);
   // const [controlledSwiper, setControlledSwiper] = useState(null);
@@ -88,7 +103,7 @@ const VerticalCarousal = () => {
   }, [swiperRef]);
   const [controlledSwiper, setControlledSwiper] = useState(null);
   const thumbsProps = {
-    spaceBetween: 10,
+    spaceBetween: 5,
     slidesPerView: 4,
     direction: "vertical",
     // pagination: true,
@@ -201,8 +216,8 @@ const VerticalCarousal = () => {
           ></Button>
         </Col>
         <Col
-          lg="7"
-          className="d-flex flex-column justify-content-center rounded p-3"
+          lg="6"
+          className="d-flex flex-column justify-content-center rounded ps-0 p-3"
         >
           <Swiper
             className="main-carousal"
@@ -232,9 +247,30 @@ const VerticalCarousal = () => {
             <SwiperSlide className="slide">Slide 9</SwiperSlide>
           </Swiper>
         </Col>
+        <Col lg="5" className=" ps-0 p-3">
+          <ThemeProvider theme={theme}>
+            <Container>
+              <Row>
+                <Col lg="12">
+                  <Typography variant="h1" className="fs-2 fw-bold pt-3 pb-3">
+                    Chinese Tiles
+                    <Button className="ms-3" variant="contained" color="info">
+                      Instock
+                    </Button>
+                  </Typography>
+
+                  <Typography color="secondary">
+                    {" "}
+                    <Rating value={5} readOnly className="pe-4" />4 Reviews
+                  </Typography>
+                </Col>
+              </Row>
+            </Container>
+          </ThemeProvider>
+        </Col>
       </Row>
     </Container>
   );
 };
 
-export default VerticalCarousal;
+export default ProductDetails;

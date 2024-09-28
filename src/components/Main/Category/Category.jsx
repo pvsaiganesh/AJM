@@ -9,7 +9,7 @@ const Category = () => {
   return (
     <Container fluid="true" className="text-center p-5">
       <Row>
-        <Col lg="12">
+        <Col xs="12" lg="12">
           <Typography variant="h6" className="text-uppercase text-orange">
             Category
           </Typography>
@@ -17,7 +17,7 @@ const Category = () => {
             Shop by Top Categories
           </Typography>
         </Col>
-        <Col lg="12">
+        <Col xs="12" lg="12">
           <Products />
         </Col>
       </Row>

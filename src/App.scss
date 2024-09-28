@@ -26,6 +26,8 @@ $master-grey: #636363;
 $master-white: #fafafa;
 $master-red: #bc2b02;
 $master-black: #000000;
+$master-blue: #008ecc33;
+$master-blue-1: #1d6383;
 
 * {
   font-family: "Poppins", system-ui !important;
@@ -64,4 +66,6 @@ $master-black: #000000;
 }
 .bg-transparent {
   background: transparent;
+}
+.bg-teal {
 }

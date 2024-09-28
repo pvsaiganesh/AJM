@@ -1,4 +1,4 @@
-import VerticalCarousal from "../../components/VerticalCarousal/VerticalCarousal";
+import VerticalCarousal from "../../components/ProductDetails/ProductDetails";
 import HomeWrapper from "../HomeWrapper";
 import "./ProductPage.scss";
 
