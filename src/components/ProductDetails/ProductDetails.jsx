@@ -149,7 +149,7 @@ const ProductDetails = () => {
   // }, []);
   return (
     <Container className="hero p-1 p-md-5 pt-2" fluid="true">
-      <Row>
+      <Row fluid="true">
         <Col
           md="1"
           xs="3"
@@ -263,9 +263,9 @@ const ProductDetails = () => {
         </Col>
         <Col xs="12" md="6" className=" ps-0 p-3">
           <ThemeProvider theme={theme}>
-            <Container>
-              <Row>
-                <Col md="12">
+            <Container fluid="true">
+              <Row fluid="true">
+                <Col xs="12" md="12">
                   <Typography variant="h1" className="fs-2 fw-bold pt-3 pb-3">
                     Chinese Tiles {params.productId}
                     <Button className="ms-3" variant="contained" color="info">
@@ -273,13 +273,13 @@ const ProductDetails = () => {
                     </Button>
                   </Typography>
 
-                  <Typography color="secondary">
+                  <Typography variant="p" color="secondary">
                     {" "}
                     <Rating value={5} readOnly className="pe-4" />4 Reviews
                   </Typography>
 
-                  <Row>
-                    <Col md="6">
+                  <Row xs="12">
+                    <Col xs="6" md="6">
                       <FormControl fullWidth>
                         <InputLabel id="demo-simple-select-label">
                           Location
@@ -297,29 +297,36 @@ const ProductDetails = () => {
                         </Select>
                       </FormControl>
                     </Col>
-                    <Col md="3" className="text-end">
-                      <Typography className="fs-4 text-decoration-line-through text-reset">
+                    <Col xs="2" md="3" className="text-end">
+                      <Typography
+                        variant="span"
+                        className="fs-4 text-decoration-line-through text-reset"
+                      >
                         ₹4800
                       </Typography>
                     </Col>
-                    <Col md="3" className="text-start">
-                      <Typography className="fs-4 fw-bold" color="text">
+                    <Col xs="2" md="3" className="text-start">
+                      <Typography
+                        variant="span"
+                        className="fs-4 fw-bold"
+                        color="text"
+                      >
                         ₹1728
                       </Typography>
                     </Col>
                   </Row>
-                  <Row className="pt-3 pb-3">
-                    <Col md="3">
-                      <Row>
-                        <Col md="6" className="text-end">
+                  <Row xs="12" className="pt-3 pb-3">
+                    <Col xs="6" md="3">
+                      <Row fluid="true" className="text-center text-md-start">
+                        <Col xs="2" md="6">
                           Brand:
                         </Col>
-                        <Col md="6" className="text-start">
+                        <Col xs="6" md="6">
                           <Image fluid src={brand} loading="lazy" />
                         </Col>
                       </Row>
                     </Col>
-                    <Col md="9" className="text-end">
+                    <Col xs="6" md="9" className="text-start text-md-end">
                       <Button className=" bg-orange p-3 rounded-circle">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -334,7 +341,7 @@ const ProductDetails = () => {
                       </Button>
                     </Col>
                   </Row>
-                  <Col md="12">
+                  <Col xs="12" md="12">
                     <Typography variant="h6">
                       Class aptent taciti sociosqu ad litora torquent per
                       conubia nostra, per inceptos himenaeos. Nulla nibh diam,
@@ -343,9 +350,12 @@ const ProductDetails = () => {
                     </Typography>
                   </Col>
                   <Col md="12">
-                    <Row className="shadow pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded">
-                      <Col md="4">
-                        <Row className="text-center">
+                    <Row
+                      fluid="true"
+                      className="shadow pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded"
+                    >
+                      <Col xs="12" md="4">
+                        <Row fluid="true" className="text-center">
                           <Col md="5">
                             <Button>
                               <svg
@@ -383,7 +393,7 @@ const ProductDetails = () => {
                         </Row>
                       </Col>
 
-                      <Col md="6">
+                      <Col xs="8" md="6">
                         <Button
                           variant="contained"
                           className="bg-orange rounded-pill"
@@ -393,7 +403,7 @@ const ProductDetails = () => {
                           Add to Cart
                         </Button>
                       </Col>
-                      <Col md="2">
+                      <Col xs="4" md="2">
                         <Button
                           className="rounded-circle p-3 "
                           variant="contained"
@@ -413,7 +423,7 @@ const ProductDetails = () => {
                     </Row>
                   </Col>
                   <Col md="12">
-                    <Typography>
+                    <Typography variant="p">
                       <Typography variant="span" className="fw-bold">
                         Category:{" "}
                       </Typography>
@@ -421,7 +431,7 @@ const ProductDetails = () => {
                     </Typography>
                   </Col>
                   <Col md="12">
-                    <Typography>
+                    <Typography variant="p">
                       <Typography variant="span" className="fw-bold">
                         Tag:{" "}
                       </Typography>
