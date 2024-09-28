@@ -368,11 +368,11 @@ const ProductDetails = () => {
                       </Row>
                     </Col>
                     <Col xs="6" md="9" className="text-start text-md-end">
-                      <Button className=" bg-orange p-3 rounded-circle">
+                      <Button className=" bg-orange p-2 rounded-circle">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
+                          width="18"
+                          height="18"
                           fill="white"
                           className="bi bi-share"
                           viewBox="0 0 16 16"
@@ -393,15 +393,15 @@ const ProductDetails = () => {
                   <Col md="12">
                     <Row
                       fluid="true"
-                      className="shadow pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded"
+                      className="shadow ps-3 pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded"
                     >
                       <Col xs="12" md="4">
                         <Row
                           fluid="true"
-                          className="text-center align-self-center"
+                          className="text-center align-self-center border rounded-pill"
                         >
                           <Col xs="5" md="5">
-                            <Button>
+                            <Button className="rounded-circle">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="32"
@@ -420,7 +420,7 @@ const ProductDetails = () => {
                             <Typography variant="span">5</Typography>
                           </Col>
                           <Col xs="5" md="5">
-                            <Button>
+                            <Button className="rounded-circle">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="32"
@@ -449,7 +449,7 @@ const ProductDetails = () => {
                       </Col>
                       <Col xs="4" md="2">
                         <Button
-                          className="rounded-circle p-3 "
+                          className="rounded-circle p-2 "
                           variant="contained"
                         >
                           <svg
