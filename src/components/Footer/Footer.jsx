@@ -20,8 +20,8 @@ const Footer = () => {
                 src={Logo}
                 fluid="true"
                 thumbnail
-                height="350px"
-                width="350px"
+                height="150px"
+                width="150px"
               />
             </Link>
           </Col>
