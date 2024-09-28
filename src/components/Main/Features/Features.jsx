@@ -6,7 +6,7 @@ import Row from "react-bootstrap/esm/Row";
 
 const Features = () => {
   return (
-    <Container fluid="true">
+    <Container fluid="true" className="pt-5">
       <Row>
         {featuresDetails.map((item) => (
           <FeatureCard key={item.id} {...item} />

@@ -10,10 +10,10 @@ const Category = () => {
     <Container fluid="true" className="text-center p-5">
       <Row>
         <Col xs="12" lg="12">
-          <Typography variant="h6" className="text-uppercase text-orange">
+          <Typography variant="h6" className="fs-6 text-uppercase text-orange">
             Category
           </Typography>
-          <Typography variant="h4" className="text-uppercase">
+          <Typography variant="h4" className="fs-4 text-uppercase">
             Shop by Top Categories
           </Typography>
         </Col>

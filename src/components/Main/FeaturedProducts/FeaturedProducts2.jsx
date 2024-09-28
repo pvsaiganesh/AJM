@@ -7,7 +7,7 @@ import FeaturedSection from "./FeaturedSection";
 
 const FeaturedProducts2 = () => {
   return (
-    <Container fluid="true">
+    <Container fluid="true" className="p-5">
       <Row>
         <Col xs="12" lg="3">
           <FeaturedSection title="Deals" />
