@@ -386,6 +386,7 @@ const ProductDetails = () => {
                           variant="contained"
                           className="bg-orange rounded-pill"
                           fullWidth
+                          size="large"
                         >
                           Add to Cart
                         </Button>
