@@ -263,7 +263,7 @@ const ProductDetails = () => {
         </Col>
         <Col xs="12" md="6" className=" ps-0 p-3">
           <ThemeProvider theme={theme}>
-            <Container fluid="true">
+            <Container className="ps-4" fluid="true">
               <Row fluid="true">
                 <Col xs="12" md="12">
                   <Typography variant="h1" className="fs-2 fw-bold pt-3 pb-3">
