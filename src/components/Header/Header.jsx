@@ -110,7 +110,7 @@ const Header = () => {
                     // ref={InputProps.ref}
                     // {...InputProps}
                     // {...rest}
-                    color="secondary"
+                    // color="primary"
                     autoComplete="true"
                     size="medium"
                     variant="filled"
