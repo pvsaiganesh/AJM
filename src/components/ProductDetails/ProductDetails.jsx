@@ -35,6 +35,7 @@ import {
 } from "@mui/material";
 import "../../App.scss";
 import brand from "../../assets/brand.svg";
+import { useParams } from "react-router-dom";
 
 // import "swiper/scss";
 // import "swiper/scss/navigation";
@@ -99,6 +100,7 @@ const theme = createTheme({
   },
 });
 const ProductDetails = () => {
+  const params = useParams();
   // store controlled swiper instance
   const [swiperRef, setSwiperRef] = useState(null);
   // const [controlledSwiper, setControlledSwiper] = useState(null);
@@ -265,7 +267,7 @@ const ProductDetails = () => {
               <Row>
                 <Col md="12">
                   <Typography variant="h1" className="fs-2 fw-bold pt-3 pb-3">
-                    Chinese Tiles
+                    Chinese Tiles {params.productId}
                     <Button className="ms-3" variant="contained" color="info">
                       Instock
                     </Button>

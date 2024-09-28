@@ -6,7 +6,7 @@ import Logo from "../../assets/AJM.svg";
 import Image from "react-bootstrap/esm/Image";
 import "./Footer.scss";
 import { Typography } from "@mui/material";
-import { InstagramEmbed } from "react-social-media-embed";
+// import { InstagramEmbed } from "react-social-media-embed";
 const Footer = () => {
   return (
     <>
@@ -86,11 +86,11 @@ const Footer = () => {
                   Instagram
                 </Typography>
                 <div>
-                  <InstagramEmbed
+                  {/* <InstagramEmbed
                     url="https://www.instagram.com/p/CUbHfhpswxt/"
                     width={300}
                     height={100}
-                  />
+                  /> */}
                 </div>
               </Col>
             </Row>

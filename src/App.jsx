@@ -43,7 +43,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="product" element={<ProductPage />} />
+            <Route path=":productId" element={<ProductPage />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
