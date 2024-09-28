@@ -355,13 +355,16 @@ const ProductDetails = () => {
                       className="shadow pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded"
                     >
                       <Col xs="12" md="4">
-                        <Row fluid="true" className="text-center">
-                          <Col md="5">
+                        <Row
+                          fluid="true"
+                          className="text-center align-self-center"
+                        >
+                          <Col xs="5" md="5">
                             <Button>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
+                                width="32"
+                                height="32"
                                 fill="black"
                                 className="bi bi-dash-circle"
                                 viewBox="0 0 16 16"
@@ -372,15 +375,15 @@ const ProductDetails = () => {
                             </Button>
                           </Col>
 
-                          <Col md="2">
+                          <Col xs="2" md="2" className="align-self-center">
                             <Typography variant="span">5</Typography>
                           </Col>
-                          <Col md="5">
+                          <Col xs="5" md="5">
                             <Button>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
+                                width="32"
+                                height="32"
                                 fill="black"
                                 className="bi bi-plus-circle"
                                 viewBox="0 0 16 16"
