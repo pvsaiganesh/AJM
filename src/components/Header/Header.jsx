@@ -74,7 +74,7 @@ const Header = () => {
                   <Link to="/">
                     <Image
                       loading="lazy"
-                      className="logo"
+                      className="logo ms-2 me-2"
                       src={Logo}
                       fluid="true"
                       rounded
