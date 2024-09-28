@@ -8,7 +8,7 @@ import { Rating, Typography } from "@mui/material";
 
 const FeaturedSectionCard = () => {
   return (
-    <Container className="shadow mb-3">
+    <Container fluid="true" className="shadow mb-3">
       <Row className="d-flex flex-row justify-content-between">
         <Col xs="4" lg="6" className="p-2">
           <Image loading="lazy" src={image} />

@@ -146,7 +146,7 @@ const ProductDetails = () => {
   //   setSwiperRef(mySwiper);
   // }, []);
   return (
-    <Container className="hero p-5 pt-2" fluid>
+    <Container className="hero p-5 pt-2" fluid="true">
       <Row>
         <Col
           lg="1"

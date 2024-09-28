@@ -8,7 +8,7 @@ import { PropTypes } from "prop-types";
 
 const FeaturedSection = ({ title }) => {
   return (
-    <Container>
+    <Container fluid="true">
       <Row>
         <Col lg="12" className="pb-3">
           <Typography variant="h6">{title}</Typography>

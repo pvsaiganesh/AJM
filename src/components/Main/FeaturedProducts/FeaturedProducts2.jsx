@@ -7,7 +7,7 @@ import FeaturedSection from "./FeaturedSection";
 
 const FeaturedProducts2 = () => {
   return (
-    <Container>
+    <Container fluid="true">
       <Row>
         <Col xs="12" lg="3">
           <FeaturedSection title="Deals" />
@@ -20,10 +20,10 @@ const FeaturedProducts2 = () => {
         </Col>
         <Col xs="12" lg="3">
           <Container
-            fluid
+            fluid="true"
             className="banner-side-image-1 p-0 d-flex flex-column rounded justify-content-start"
           >
-            <Container fluid className="p-3 text-center rounded">
+            <Container fluid="true" className="p-3 text-center rounded">
               <Typography variant="h6" className="text-white p-0 pb-3">
                 Best Deals
               </Typography>
