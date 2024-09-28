@@ -9,7 +9,7 @@ const ProductPage = () => {
   return (
     <HomeWrapper>
       <ProductDetails />
-      <Container className="p-5">
+      <Container className="p-2 p-md-5">
         <Typography variant="h4" className="fs-4 text-center fw-bold">
           Related Products
         </Typography>

@@ -48,7 +48,7 @@ const Header = () => {
                   md="4"
                   className="text-orange text-start text-md-center fw-bold"
                 >
-                  Get a Free Quote
+                  <span className="fs-6">Get a Free Quote</span>
                 </Col>
                 <Col xs="12" md="4" className="text-start text-md-end pe-md-4">
                   <span className="me-2 bg-primary rounded-circle p-1">
@@ -66,7 +66,7 @@ const Header = () => {
                       />
                     </svg>
                   </span>
-                  +91 9550482920
+                  <span className="fs-6">+91 9550482920</span>
                 </Col>
               </Row>
             </Container>
