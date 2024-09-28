@@ -74,7 +74,7 @@ const Header = () => {
           <Col className="order-0 order-md-1" xs="4" md="12">
             <Container fluid="true">
               <Row className="d-flex flex-row justify-content-start align-items-center">
-                <Col xs="12" md="2">
+                <Col xs="12" md="3">
                   <Link to="/">
                     <Image
                       loading="lazy"
@@ -85,7 +85,7 @@ const Header = () => {
                     />
                   </Link>
                 </Col>
-                <Col className="d-none d-md-block" xs="12" md="3">
+                <Col className="d-none d-md-block" xs="12" md="2">
                   {/* <Autocomplete
                     freeSolo
                     variant="solid"
