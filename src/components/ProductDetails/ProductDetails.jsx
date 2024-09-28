@@ -318,7 +318,7 @@ const ProductDetails = () => {
                       </Row>
                     </Col>
                     <Col lg="9" className="text-end">
-                      <span className=" bg-orange p-3 rounded-circle">
+                      <Button className=" bg-orange p-3 rounded-circle">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -329,7 +329,7 @@ const ProductDetails = () => {
                         >
                           <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
                         </svg>
-                      </span>
+                      </Button>
                     </Col>
                   </Row>
                   <Col lg="12">
@@ -350,7 +350,7 @@ const ProductDetails = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
-                                fill="currentColor"
+                                fill="black"
                                 className="bi bi-dash-circle"
                                 viewBox="0 0 16 16"
                               >
@@ -369,7 +369,7 @@ const ProductDetails = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
-                                fill="currentColor"
+                                fill="black"
                                 className="bi bi-plus-circle"
                                 viewBox="0 0 16 16"
                               >
@@ -392,14 +392,14 @@ const ProductDetails = () => {
                       </Col>
                       <Col lg="2">
                         <Button
-                          className="rounded-circle p-3"
+                          className="rounded-circle p-3 "
                           variant="contained"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
+                            width="24"
+                            height="24"
+                            fill="#1d6383"
                             className="bi bi-heart"
                             viewBox="0 0 16 16"
                           >
