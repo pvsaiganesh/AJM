@@ -51,10 +51,10 @@ const Header = () => {
                   <span className="fs-6">Get a Free Quote</span>
                 </Col>
                 <Col xs="12" md="4" className="text-start text-md-end pe-md-4">
-                  <span className="me-2 bg-primary rounded-circle p-1">
+                  <span className="bg-primary rounded-circle p-1 pt-0 pb-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="24"
+                      width="16"
                       height="16"
                       fill="white"
                       className="bi bi-telephone-fill"
@@ -66,7 +66,7 @@ const Header = () => {
                       />
                     </svg>
                   </span>
-                  <span className="fs-6">+91 9550482920</span>
+                  <span className="ms-2 fs-6">+91 9550482920</span>
                 </Col>
               </Row>
             </Container>
