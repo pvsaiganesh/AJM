@@ -132,7 +132,11 @@ const Header = () => {
                           </InputAdornment>
                         }
                       >
-                        <Input fullWidth className="search-box-input" />
+                        <Input
+                          inputprops={params.InputProps}
+                          fullWidth
+                          className="search-box-input"
+                        />
                       </InputBase>
                     )}
                   />
