@@ -110,7 +110,10 @@ const Header = () => {
                     // ref={InputProps.ref}
                     // {...InputProps}
                     // {...rest}
-                    size="small"
+                    color="secondary"
+                    autoComplete="true"
+                    size="medium"
+                    variant="filled"
                     placeholder="Search here..."
                     startAdornment={
                       <InputAdornment position="start">
@@ -159,7 +162,7 @@ const Header = () => {
                   <Navbar data-bs-theme="white">
                     <Container>
                       <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="#features">About Us</Nav.Link>
                         <Nav.Link href="#pricing">Blogs</Nav.Link>
                         <Nav.Link href="#contactus">Contact Us</Nav.Link>
@@ -236,7 +239,7 @@ const Header = () => {
                 ></button>
               </div>
               <div className="offcanvas-body">
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="#features">About Us</Nav.Link>
                 <Nav.Link href="#pricing">Blogs</Nav.Link>
                 <Nav.Link href="#contactus">Contact Us</Nav.Link>
