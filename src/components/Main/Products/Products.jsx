@@ -1,9 +1,9 @@
-import { Container } from "@mui/material";
 import Row from "react-bootstrap/esm/Row";
 import Product from "./ProductCard";
 import Col from "react-bootstrap/esm/Col";
 import { productsInfo } from "./products-constants";
 import { PropTypes } from "prop-types";
+import Container from "react-bootstrap/esm/Container";
 
 export const Products = ({ lg, children }) => {
   console.log(children);
