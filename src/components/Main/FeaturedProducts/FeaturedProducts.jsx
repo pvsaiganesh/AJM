@@ -17,7 +17,7 @@ const FeaturedProducts = () => {
             Our Featured Products
           </Typography>
         </Col>
-        <Products lg="3">
+        <Products lg="2">
           <Col xs="12" lg="3">
             <Container
               fluid="true"

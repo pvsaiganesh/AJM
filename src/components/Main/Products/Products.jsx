@@ -8,23 +8,25 @@ import Container from "react-bootstrap/esm/Container";
 export const Products = ({ lg, children }) => {
   // console.log(children);
   return (
-    <Container fluid="true">
-      <Row>
-        {children}
-        {productsInfo.map((product) => {
-          return (
-            <Col
-              xs="12"
-              sm="6"
-              lg={lg ? lg : "3"}
-              key={product.id}
-              className="p-2"
-            >
-              <Product {...product} />
-            </Col>
-          );
-        })}
-      </Row>
+    <Container className="p-2">
+      <Container fluid="true" className="p-2 p-md-5">
+        <Row>
+          {children}
+          {productsInfo.map((product) => {
+            return (
+              <Col
+                xs="12"
+                sm="6"
+                lg={lg ? lg : "3"}
+                key={product.id}
+                className="p-2"
+              >
+                <Product {...product} />
+              </Col>
+            );
+          })}
+        </Row>
+      </Container>
     </Container>
   );
 };
