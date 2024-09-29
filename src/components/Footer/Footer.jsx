@@ -21,7 +21,7 @@ const Footer = () => {
                 fluid="true"
                 thumbnail
                 height="150px"
-                width="150px"
+                width="250px"
               />
             </Link>
           </Col>
