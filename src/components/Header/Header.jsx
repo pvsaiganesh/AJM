@@ -19,7 +19,7 @@ const Header = () => {
     <header className="header p-1">
       <Container fluid="true">
         <Row>
-          <Col className="order-1 order-lg-0" xs="8" lg="12">
+          <Col className="order-1 order-lg-0 shadow-bottom mb-1" xs="8" lg="12">
             <Container fluid="true" className="pt-1 pb-1">
               <Row>
                 <Col
