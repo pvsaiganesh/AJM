@@ -8,10 +8,10 @@ const FeatureCard = (item) => {
       xs="12"
       sm="6"
       md="3"
-      className="feature-card d-flex flex-row justify-content-start justify-content-md-center pb-2"
+      className="feature-card d-flex flex-row justify-content-start justify-content-md-center mb-1 p-3 ps-0 pe-0 "
     >
-      <div className="pe-1 ps-3 pe-md-3 align-self-center">
-        <span className="rounded-circle p-2 p-md-4 feature-image">
+      <div className="p-2 ps-md-3 pe-md-5 align-self-center">
+        <span className="rounded-circle p-2 feature-image">
           <Image
             loading="lazy"
             className="feature-icon"

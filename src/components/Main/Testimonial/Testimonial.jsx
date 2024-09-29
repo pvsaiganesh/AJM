@@ -13,7 +13,9 @@ const Testimonial = () => {
       <Typography variant="h6" className="text-orange">
         Client Testimonial
       </Typography>
-      <Typography variant="h4">What our Clients Say</Typography>
+      <Typography variant="h4" className="p-2">
+        What our Clients Say
+      </Typography>
       <Row className="pt-5">
         <Col md={{ span: 4, offset: 0 }} className="pb-3">
           <Container

@@ -5,7 +5,7 @@ const Expert = () => {
   return (
     <div className="bg  p-2 p-md-5 d-flex flex-row justify-content-center align-items-center">
       <div className="p-2 p-md-5 text-center text-white">
-        <Typography variant="h2" className="fs-2 fw-bold">
+        <Typography variant="p" className="fs-3 fw-bold">
           Talk to a Expert Now
         </Typography>
         <Typography variant="h6" className="fs-6">

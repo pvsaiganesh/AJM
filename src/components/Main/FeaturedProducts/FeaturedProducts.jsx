@@ -13,7 +13,7 @@ const FeaturedProducts = () => {
           <Typography variant="h6" className="fs-6 text-uppercase text-orange">
             Products
           </Typography>
-          <Typography variant="h4" className="fs-4 text-uppercase">
+          <Typography variant="h4" className="fs-4 text-uppercase p-2">
             Our Featured Products
           </Typography>
         </Col>
