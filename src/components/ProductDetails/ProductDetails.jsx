@@ -144,7 +144,7 @@ const ProductDetails = () => {
   }, [swiperRef]);
   const [controlledSwiper, setControlledSwiper] = useState(null);
   const thumbsProps = {
-    spaceBetween: 5,
+    spaceBetween: 0,
     slidesPerView: 4,
     direction: "vertical",
     // pagination: true,
@@ -189,10 +189,10 @@ const ProductDetails = () => {
   //   setSwiperRef(mySwiper);
   // }, []);
   return (
-    <Container className="hero p-1 p-md-5 pt-2" fluid="true">
+    <Container className="hero p-1 p-lg-5 pt-2" fluid="true">
       <Row fluid="true">
         <Col
-          md="1"
+          lg="2"
           xs="3"
           className="text-center d-flex flex-column justify-content-center rounded"
         >
@@ -238,16 +238,16 @@ const ProductDetails = () => {
               <Image loading="lazy" src={img2} />
             </SwiperSlide>
             <SwiperSlide className="slide-main">Slide 3</SwiperSlide>
-            <SwiperSlide className="slide">
+            <SwiperSlide className="slide-main">
               <Image loading="lazy" src={img2} className="thumb-img" />
             </SwiperSlide>
-            <SwiperSlide className="slide">
+            <SwiperSlide className="slide-main">
               <Image loading="lazy" src={img1} className="thumb-img" />
             </SwiperSlide>
-            <SwiperSlide className="slide">Slide 6</SwiperSlide>
-            <SwiperSlide className="slide">Slide 7</SwiperSlide>
-            <SwiperSlide className="slide">Slide 8</SwiperSlide>
-            <SwiperSlide className="slide">Slide 9</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 6</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 7</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 8</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 9</SwiperSlide>
           </Swiper>
           <Button
             className="bg-white text-dark"
@@ -270,7 +270,7 @@ const ProductDetails = () => {
           ></Button>
         </Col>
         <Col
-          md="5"
+          lg="4"
           xs="9"
           className="d-flex flex-column justify-content-center rounded ps-0 p-3"
         >
@@ -290,23 +290,23 @@ const ProductDetails = () => {
               <Image loading="lazy" src={img2} />
             </SwiperSlide>
             <SwiperSlide className="slide-main">Slide 3</SwiperSlide>
-            <SwiperSlide className="slide">
+            <SwiperSlide className="slide-main">
               <Image loading="lazy" src={img2} className="thumb-img" />
             </SwiperSlide>
-            <SwiperSlide className="slide">
+            <SwiperSlide className="slide-main">
               <Image loading="lazy" src={img1} className="thumb-img" />
             </SwiperSlide>
-            <SwiperSlide className="slide">Slide 6</SwiperSlide>
-            <SwiperSlide className="slide">Slide 7</SwiperSlide>
-            <SwiperSlide className="slide">Slide 8</SwiperSlide>
-            <SwiperSlide className="slide">Slide 9</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 6</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 7</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 8</SwiperSlide>
+            <SwiperSlide className="slide-main">Slide 9</SwiperSlide>
           </Swiper>
         </Col>
-        <Col xs="12" md="6" className=" ps-0 p-3">
+        <Col xs="12" lg="6" className=" ps-0 p-3">
           <ThemeProvider theme={theme}>
             <Container className="ps-4" fluid="true">
               <Row fluid="true">
-                <Col xs="12" md="12">
+                <Col xs="12" lg="12">
                   <Typography variant="h1" className="fs-2 fw-bold pt-3 pb-3">
                     Chinese Tiles {params.productId}
                     <Button className="ms-3" variant="contained" color="info">
@@ -320,7 +320,7 @@ const ProductDetails = () => {
                   </Typography>
 
                   <Row xs="12">
-                    <Col xs="6" md="6">
+                    <Col xs="6" lg="6">
                       <FormControl fullWidth>
                         <InputLabel id="demo-simple-select-label">
                           Location
@@ -338,7 +338,7 @@ const ProductDetails = () => {
                         </Select>
                       </FormControl>
                     </Col>
-                    <Col xs="2" md="3" className="text-end">
+                    <Col xs="2" lg="3" className="text-end">
                       <Typography
                         variant="span"
                         className="fs-4 text-decoration-line-through text-reset"
@@ -346,7 +346,7 @@ const ProductDetails = () => {
                         ₹4800
                       </Typography>
                     </Col>
-                    <Col xs="2" md="3" className="text-start">
+                    <Col xs="2" lg="3" className="text-start">
                       <Typography
                         variant="span"
                         className="fs-4 fw-bold"
@@ -357,17 +357,17 @@ const ProductDetails = () => {
                     </Col>
                   </Row>
                   <Row xs="12" className="pt-3 pb-3">
-                    <Col xs="6" md="3">
-                      <Row fluid="true" className="text-center text-md-start">
-                        <Col xs="2" md="6">
+                    <Col xs="6" lg="3">
+                      <Row fluid="true" className="text-center text-lg-start">
+                        <Col xs="2" lg="6">
                           Brand:
                         </Col>
-                        <Col xs="6" md="6">
+                        <Col xs="6" lg="6">
                           <Image fluid src={brand} loading="lazy" />
                         </Col>
                       </Row>
                     </Col>
-                    <Col xs="6" md="9" className="text-start text-md-end">
+                    <Col xs="6" lg="9" className="text-start text-lg-end">
                       <Button className=" bg-orange p-2 rounded-circle">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -382,7 +382,7 @@ const ProductDetails = () => {
                       </Button>
                     </Col>
                   </Row>
-                  <Col xs="12" md="12">
+                  <Col xs="12" lg="12">
                     <Typography variant="h6">
                       Class aptent taciti sociosqu ad litora torquent per
                       conubia nostra, per inceptos himenaeos. Nulla nibh diam,
@@ -390,17 +390,17 @@ const ProductDetails = () => {
                       magna a consequat pulvinar.
                     </Typography>
                   </Col>
-                  <Col md="12">
+                  <Col lg="12">
                     <Row
                       fluid="true"
                       className="shadow ps-3 pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded"
                     >
-                      <Col xs="12" md="4">
+                      <Col xs="12" lg="4">
                         <Row
                           fluid="true"
                           className="text-center align-self-center border rounded-pill"
                         >
-                          <Col xs="5" md="5">
+                          <Col xs="5" lg="5">
                             <Button className="rounded-circle">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -416,10 +416,10 @@ const ProductDetails = () => {
                             </Button>
                           </Col>
 
-                          <Col xs="2" md="2" className="align-self-center">
+                          <Col xs="2" lg="2" className="align-self-center">
                             <Typography variant="span">5</Typography>
                           </Col>
-                          <Col xs="5" md="5">
+                          <Col xs="5" lg="5">
                             <Button className="rounded-circle">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -437,7 +437,7 @@ const ProductDetails = () => {
                         </Row>
                       </Col>
 
-                      <Col xs="8" md="6">
+                      <Col xs="8" lg="6">
                         <Button
                           variant="contained"
                           className="bg-orange rounded-pill"
@@ -447,7 +447,7 @@ const ProductDetails = () => {
                           Add to Cart
                         </Button>
                       </Col>
-                      <Col xs="4" md="2">
+                      <Col xs="4" lg="2">
                         <Button
                           className="rounded-circle p-2 "
                           variant="contained"
@@ -466,7 +466,7 @@ const ProductDetails = () => {
                       </Col>
                     </Row>
                   </Col>
-                  <Col md="12">
+                  <Col lg="12">
                     <Typography variant="p">
                       <Typography variant="span" className="fw-bold">
                         Category:{" "}
@@ -474,7 +474,7 @@ const ProductDetails = () => {
                       Sand
                     </Typography>
                   </Col>
-                  <Col md="12">
+                  <Col lg="12">
                     <Typography variant="p">
                       <Typography variant="span" className="fw-bold">
                         Tag:{" "}

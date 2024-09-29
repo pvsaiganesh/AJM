@@ -12,7 +12,7 @@ const ProductPage = () => {
       <Container className="p-0 p-md-5">
         <Typography
           variant="h4"
-          className="fs-4 text-start text-md-center fw-bold"
+          className="fs-4 text-start text-md-center fw-bold pb-2"
         >
           Related Products
         </Typography>

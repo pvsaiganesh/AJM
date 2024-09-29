@@ -7,13 +7,13 @@
 }
 .main-carousal {
   height: 100%;
-  width: 556px;
+  width: 500px;
   background-color: white;
   object-fit: cover;
 }
 .thumbs-carousal {
-  height: 400px;
-  width: 100px;
+  height: 60vh;
+  width: 100%;
   background-color: white;
 }
 .slide-main {
@@ -21,11 +21,12 @@
   width: 100%;
 }
 .thumb-img {
-  object-fit: cover;
+  // object-fit: cover;
 }
 .slide {
   height: 100%;
   width: 100%;
+  padding: 2rem;
 }
 .swiper-button-next,
 .swiper-button-prev {

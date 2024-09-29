@@ -9,16 +9,16 @@ const FeaturedProducts2 = () => {
   return (
     <Container fluid="true" className="p-5">
       <Row>
-        <Col xs="12" md="3">
+        <Col xs="12" lg="3">
           <FeaturedSection title="Deals" />
         </Col>
-        <Col xs="12" md="3">
+        <Col xs="12" lg="3">
           <FeaturedSection title="Top Deals" />
         </Col>
-        <Col xs="12" md="3">
+        <Col xs="12" lg="3">
           <FeaturedSection title="Best Sellers" />
         </Col>
-        <Col xs="12" md="3">
+        <Col xs="12" lg="3">
           <Container
             fluid="true"
             className="banner-side-image-1 p-0 d-flex flex-column rounded justify-content-start"

@@ -13,23 +13,23 @@ const ContactInfo = () => {
   return (
     <Container fluid="true" className="pt-5 pb-5">
       <Row>
-        <Col xs="12" md="5">
+        <Col xs="12" lg="5">
           <Image loading="lazy" src={ContactUsImage} fluid="true" />
         </Col>
         <Col
-          md="2"
+          lg="2"
           xs="12"
           className="d-flex flex-row justify-content-center align-items-center"
         >
           <Container>
             <Row>
-              <Col md="12" className="text-center pb-3 p-1">
+              <Col lg="12" className="text-center pb-3 p-1">
                 <Container fluid="true" className="border-bottom">
                   <Row>
-                    <Col md="12" className="pb-3">
+                    <Col lg="12" className="pb-3">
                       <Image loading="lazy" src={icon1} />
                     </Col>
-                    <Col md="12" className="pb-3">
+                    <Col lg="12" className="pb-3">
                       <Typography variant="h-6">
                         djjdjdjdjdjjjjjjjjjdjdj
                       </Typography>
@@ -37,13 +37,13 @@ const ContactInfo = () => {
                   </Row>
                 </Container>
               </Col>
-              <Col md="12" className="text-center pb-3">
+              <Col lg="12" className="text-center pb-3">
                 <Container fluid="true" className="border-bottom">
                   <Row>
-                    <Col md="12" className="pb-3">
+                    <Col lg="12" className="pb-3">
                       <Image loading="lazy" src={icon2} />
                     </Col>
-                    <Col md="12" className="pb-3">
+                    <Col lg="12" className="pb-3">
                       <Typography variant="h-6">
                         djjdjdjdjdjjjjjjjjjdjdj
                       </Typography>
@@ -51,13 +51,13 @@ const ContactInfo = () => {
                   </Row>
                 </Container>
               </Col>
-              <Col md="12" className="text-center pb-3">
+              <Col lg="12" className="text-center pb-3">
                 <Container fluid="true" className="border-bottom">
                   <Row>
-                    <Col md="12" className="pb-3">
+                    <Col lg="12" className="pb-3">
                       <Image loading="lazy" src={icon3} />
                     </Col>
-                    <Col md="12" className="pb-3">
+                    <Col lg="12" className="pb-3">
                       <Typography variant="h-6">
                         djjdjdjdjdjjjjjjjjjdjdj
                       </Typography>
@@ -68,7 +68,7 @@ const ContactInfo = () => {
             </Row>
           </Container>
         </Col>
-        <Col xs="!2" md="5" className="p-5 pt-0 ">
+        <Col xs="!2" lg="5" className="p-5 pt-0 ">
           <Container fluid="true">
             <Typography variant="h5" className="pb-3">
               Contact Us

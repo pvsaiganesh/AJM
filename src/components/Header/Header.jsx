@@ -19,13 +19,13 @@ const Header = () => {
     <header className="header p-1">
       <Container fluid="true">
         <Row>
-          <Col className="order-1 order-md-0" xs="8" md="12">
+          <Col className="order-1 order-lg-0" xs="8" lg="12">
             <Container fluid="true" className="pt-1 pb-1">
               <Row>
                 <Col
                   xs="12"
-                  md="4"
-                  className="d-none d-md-block text-start fw-bold"
+                  lg="4"
+                  className="d-none d-lg-block text-start fw-bold"
                 >
                   {/* <span className="me-2">
               <svg
@@ -45,12 +45,12 @@ const Header = () => {
                 </Col>
                 <Col
                   xs="12"
-                  md="4"
-                  className="text-orange text-start text-md-center fw-bold"
+                  lg="4"
+                  className="text-orange text-start text-lg-center fw-bold"
                 >
                   <span className="fs-6">Get a Free Quote</span>
                 </Col>
-                <Col xs="12" md="4" className="text-start text-md-end pe-md-4">
+                <Col xs="12" lg="4" className="text-start text-lg-end pe-lg-4">
                   <span className="bg-primary rounded-circle p-1 pt-0 pb-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -71,10 +71,10 @@ const Header = () => {
               </Row>
             </Container>
           </Col>
-          <Col className="order-0 order-md-1" xs="4" md="12">
+          <Col className="order-0 order-lg-1" xs="4" lg="12">
             <Container fluid="true">
               <Row className="d-flex flex-row justify-content-start align-items-center">
-                <Col xs="12" md="3">
+                <Col xs="12" lg="3">
                   <Link to="/">
                     <Image
                       loading="lazy"
@@ -85,7 +85,7 @@ const Header = () => {
                     />
                   </Link>
                 </Col>
-                <Col className="d-none d-md-block" xs="12" md="2">
+                <Col className="d-none d-lg-block" xs="12" lg="2">
                   {/* <Autocomplete
                     freeSolo
                     variant="solid"
@@ -158,7 +158,7 @@ const Header = () => {
                   {/* /> */}
                 </Col>
 
-                <Col className="d-none d-md-block" md="4">
+                <Col className="d-none d-lg-block" lg="4">
                   <Navbar data-bs-theme="white">
                     <Container>
                       <Nav className="me-auto">
@@ -172,8 +172,8 @@ const Header = () => {
                 </Col>
                 <Col
                   xs="8"
-                  md="3"
-                  className="d-none d-md-block d-flex flex-row justify-content-start justify-content-md-end"
+                  lg="3"
+                  className="d-none d-lg-block d-flex flex-row justify-content-start justify-content-lg-end"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +202,7 @@ const Header = () => {
               </Row>
             </Container>
           </Col>
-          <Col xs="2" className="order-2 d-md-none" md="4">
+          <Col xs="2" className="order-2 d-lg-none" lg="4">
             <svg
               type="button"
               data-bs-toggle="offcanvas"
@@ -212,7 +212,7 @@ const Header = () => {
               width="32"
               height="32"
               fill="#ee5124"
-              className="bi bi-list d-md-none m-2"
+              className="bi bi-list d-lg-none m-2"
               viewBox="0 0 16 16"
             >
               <path
@@ -221,7 +221,7 @@ const Header = () => {
               />
             </svg>
             <div
-              className="offcanvas offcanvas-start d-md-none"
+              className="offcanvas offcanvas-start d-lg-none"
               tabIndex="-1"
               id="offcanvasResponsive"
               aria-labelledby="offcanvasResponsiveLabel"
@@ -248,7 +248,7 @@ const Header = () => {
           </Col>
           <Col
             xs="10"
-            className="order-3 d-md-none d-flex flex-row justify-content-start justify-content-md-end"
+            className="order-3 d-lg-none d-flex flex-row justify-content-end justify-content-lg-end"
           >
             <Button variant="contained" className="me-3">
               Login/Register

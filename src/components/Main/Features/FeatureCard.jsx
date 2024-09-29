@@ -7,10 +7,10 @@ const FeatureCard = (item) => {
     <Col
       xs="12"
       sm="6"
-      md="3"
-      className="feature-card d-flex flex-row justify-content-start justify-content-md-center mb-1 p-3 ps-0 pe-0 "
+      lg="3"
+      className="feature-card d-flex flex-row justify-content-start justify-content-lg-center mb-1 p-3 ps-0 pe-0 "
     >
-      <div className="p-2 ps-md-3 pe-md-5 align-self-center">
+      <div className="p-2 ps-lg-3 pe-lg-5 align-self-center">
         <span className="rounded-circle p-2 feature-image">
           <Image
             loading="lazy"

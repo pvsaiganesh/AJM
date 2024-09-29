@@ -8,7 +8,7 @@ import Image from "react-bootstrap/esm/Image";
 
 const Banner = () => {
   return (
-    <div className="banner text-white p-2 p-md-5 rounded">
+    <div className="banner text-white p-2 p-lg-5 rounded">
       <Container fluid className="p-2">
         <Row>
           <Col xs="12" sm="6">
