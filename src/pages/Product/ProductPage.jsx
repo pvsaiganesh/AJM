@@ -9,8 +9,11 @@ const ProductPage = () => {
   return (
     <HomeWrapper>
       <ProductDetails />
-      <Container className="p-2 p-md-5">
-        <Typography variant="h4" className="fs-4 text-center fw-bold">
+      <Container className="p-0 p-md-5">
+        <Typography
+          variant="h4"
+          className="fs-4 text-start text-md-center fw-bold"
+        >
           Related Products
         </Typography>
         <Products lg="4" />
