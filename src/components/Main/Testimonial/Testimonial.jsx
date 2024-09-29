@@ -41,7 +41,12 @@ const Testimonial = () => {
                   </Container>
                 </Col>
                 <Col lg="6" className="text-end">
-                  <Rating name="read-only" defaultValue={5} readOnly />
+                  <Rating
+                    name="read-only"
+                    defaultValue={5}
+                    readOnly
+                    sx={{ width: "100px" }}
+                  />
                 </Col>
               </Row>
             </Container>
@@ -71,7 +76,12 @@ const Testimonial = () => {
                   </Container>
                 </Col>
                 <Col lg="6" className="text-end">
-                  <Rating name="read-only" defaultValue={5} readOnly />
+                  <Rating
+                    name="read-only"
+                    defaultValue={5}
+                    readOnly
+                    sx={{ width: "100px" }}
+                  />
                 </Col>
               </Row>
             </Container>
@@ -101,7 +111,12 @@ const Testimonial = () => {
                   </Container>
                 </Col>
                 <Col lg="6" className="text-end">
-                  <Rating name="read-only" defaultValue={5} readOnly />
+                  <Rating
+                    name="read-only"
+                    defaultValue={5}
+                    readOnly
+                    sx={{ width: "100px" }}
+                  />
                 </Col>
               </Row>
             </Container>

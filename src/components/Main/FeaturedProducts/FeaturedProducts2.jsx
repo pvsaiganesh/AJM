@@ -23,7 +23,7 @@ const FeaturedProducts2 = () => {
             fluid="true"
             className="banner-side-image-1 p-0 d-flex flex-column rounded justify-content-start"
           >
-            <Container fluid="true" className="p-3 text-center rounded">
+            <Container fluid="true" className="p-2 text-center rounded">
               <Typography variant="h6" className="text-white p-0 pb-3">
                 Best Deals
               </Typography>
