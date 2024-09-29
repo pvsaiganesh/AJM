@@ -26,7 +26,6 @@ import img2 from "../../assets/thumb-image.svg";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import {
   Button,
-  Rating,
   Typography,
   Select,
   FormControl,
@@ -36,7 +35,7 @@ import {
 import "../../App.scss";
 import brand from "../../assets/brand.svg";
 import { useParams } from "react-router-dom";
-
+import Rating from "@mui/material/Rating";
 // import "swiper/scss";
 // import "swiper/scss/navigation";
 // import "swiper/scss/pagination";
@@ -315,10 +314,17 @@ const ProductDetails = () => {
                       Instock
                     </Button>
                   </Typography>
-
-                  <Typography variant="p" color="secondary">
-                    {" "}
-                    <Rating value={5} readOnly className="pe-4" />4 Reviews
+                  <Container>
+                    <Rating
+                      defaultValue={5}
+                      value={5}
+                      readOnly
+                      fullWidth
+                      // className="me-2"
+                    />
+                  </Container>
+                  <Typography variant="span" color="secondary">
+                    4 Reviews
                   </Typography>
 
                   <Row xs="12">
