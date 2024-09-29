@@ -317,7 +317,7 @@ const ProductDetails = () => {
                   <Typography
                     variant="span"
                     color="secondary"
-                    className="d-flex flex-row align-items-center"
+                    className="d-flex flex-row align-items-center pb-3"
                   >
                     <Rating
                       defaultValue={5}
