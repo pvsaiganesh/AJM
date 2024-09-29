@@ -48,7 +48,7 @@ const Header = () => {
                   lg="4"
                   className="text-orange text-start text-lg-center fw-bold"
                 >
-                  <span className="display-6">Get a Free Quote</span>
+                  <span className="display-6 fw-bold">Get a Free Quote</span>
                 </Col>
                 <Col xs="12" lg="4" className="text-start text-lg-end pe-lg-4">
                   <span className="bg-primary rounded-circle p-1 pt-0 pb-0">
@@ -66,7 +66,7 @@ const Header = () => {
                       />
                     </svg>
                   </span>
-                  <span className="ms-2 display-6">+91 9550482920</span>
+                  <span className="ms-2 display-6 fw-bold">+91 9550482920</span>
                 </Col>
               </Row>
             </Container>
@@ -161,7 +161,7 @@ const Header = () => {
                 <Col className="d-none d-lg-block" lg="4">
                   <Navbar data-bs-theme="white">
                     <Container>
-                      <Nav className="me-auto">
+                      <Nav className="me-auto fw-bold">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="#features">About Us</Nav.Link>
                         <Nav.Link href="#pricing">Blogs</Nav.Link>
