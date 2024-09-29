@@ -500,7 +500,7 @@ const ProductDetails = () => {
                 aria-label="basic tabs example"
               >
                 <Tab label="Description" {...a11yProps(0)} />
-                <Tab label="Customer Reviews" {...a11yProps(1)} />
+                <Tab label="Customer Feedback" {...a11yProps(1)} />
                 {/* <Tab label="Item Three" {...a11yProps(2)} /> */}
               </Tabs>
             </Box>
