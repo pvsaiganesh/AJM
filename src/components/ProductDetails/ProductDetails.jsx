@@ -397,7 +397,7 @@ const ProductDetails = () => {
                       fluid="true"
                       className="shadow ps-3 pt-3 pb-3 mb-3 d-flex flex-row justify-content-center align-items-center rounded"
                     >
-                      <Col xs="10" lg="4" className="pb-3">
+                      <Col xs="10" lg="4" className="">
                         <Row
                           fluid="true"
                           className="text-center align-self-center border rounded-pill"
