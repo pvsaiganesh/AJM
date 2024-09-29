@@ -13,7 +13,7 @@ const Product = ({ image, title, price, tagtitle, id }) => {
       <Row className="p-1 p-lg-1 text-center text-lg-start">
         <Col xs="12" lg="12" className=" position-relative">
           <Image loading="lazy" src={image} fluid="true" />
-          <Typography className="fs-6 position-absolute top-0 bg-orange m-1 p-1 text-white rounded">
+          <Typography className="fs-6 position-absolute start-50 start-md-0 top-0 bg-orange m-1 p-1 text-white rounded">
             {tagtitle}
           </Typography>
         </Col>

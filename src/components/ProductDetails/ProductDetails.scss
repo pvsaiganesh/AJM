@@ -7,13 +7,13 @@
 }
 .main-carousal {
   height: 100%;
-  width: 500px;
+  width: min(40vw, 300px);
   background-color: white;
   object-fit: cover;
 }
 .thumbs-carousal {
   height: 60vh;
-  width: 100%;
+  width: min(40vw, 200px);
   background-color: white;
 }
 .slide-main {
