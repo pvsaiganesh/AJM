@@ -19,7 +19,7 @@ const Header = () => {
     <header className="header p-1">
       <Container fluid="true">
         <Row>
-          <Col className="order-1 order-lg-0 shadow-bottom mb-1" xs="8" lg="12">
+          <Col className="order-1 order-lg-0 shadow-bottom mb-1" xs="6" lg="12">
             <Container fluid="true" className="pt-1 pb-1">
               <Row>
                 <Col
@@ -48,7 +48,7 @@ const Header = () => {
                   lg="4"
                   className="text-orange text-start text-lg-center fw-bold"
                 >
-                  <span className="fs-6">Get a Free Quote</span>
+                  <span className="display-6">Get a Free Quote</span>
                 </Col>
                 <Col xs="12" lg="4" className="text-start text-lg-end pe-lg-4">
                   <span className="bg-primary rounded-circle p-1 pt-0 pb-0">
@@ -66,12 +66,12 @@ const Header = () => {
                       />
                     </svg>
                   </span>
-                  <span className="ms-2 fs-6">+91 9550482920</span>
+                  <span className="ms-2 display-6">+91 9550482920</span>
                 </Col>
               </Row>
             </Container>
           </Col>
-          <Col className="order-0 order-lg-1" xs="4" lg="12">
+          <Col className="order-0 order-lg-1" xs="6" lg="12">
             <Container fluid="true">
               <Row className="d-flex flex-row justify-content-start align-items-center">
                 <Col xs="12" lg="3">

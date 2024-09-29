@@ -11,7 +11,7 @@ const FeatureCard = (item) => {
       className="feature-card d-flex flex-row justify-content-start justify-content-lg-center mb-1 p-3 ps-0 pe-0 "
     >
       <div className="p-2 ps-lg-3 pe-lg-5 align-self-center">
-        <span className="rounded-circle p-2 feature-image">
+        <span className="rounded-circle p-3 feature-image">
           <Image
             loading="lazy"
             className="feature-icon"
