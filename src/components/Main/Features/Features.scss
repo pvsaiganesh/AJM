@@ -4,10 +4,10 @@
   background: #edf2ee;
 }
 .feature-card {
-  border-bottom: 1px solid $master-grey;
+  border-bottom: 2px solid $master-grey;
 }
 .feature-card:hover {
-  border-bottom: 2px solid $master-color;
+  border-bottom: 4px solid $master-color;
   .feature-image {
     background-color: $master-color;
   }
