@@ -314,15 +314,15 @@ const ProductDetails = () => {
                       Instock
                     </Button>
                   </Typography>
-                  <Container>
-                    <Rating
-                      defaultValue={5}
-                      value={5}
-                      readOnly
-                      fullWidth
-                      // className="me-2"
-                    />
-                  </Container>
+                  {/* <Container> */}
+                  <Rating
+                    defaultValue={5}
+                    value={5}
+                    readOnly
+                    fullWidth
+                    // className="me-2"
+                  />
+                  {/* </Container> */}
                   <Typography variant="span" color="secondary">
                     4 Reviews
                   </Typography>
