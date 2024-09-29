@@ -19,11 +19,14 @@ const ProductPage = () => {
           Related Products
         </Typography>
         <Products lg="4" />
-        <Container className="banner-2  p-5 mt-5">
-          <Row>
+      </Container>
+      <Container className="p-5">
+        <Container className="banner-2  m-1 pt-5 pb-5  p-md-2 mt-5 mb-5 rounded">
+          <Row className="d-flex flex-column  flex-md-row justify-content-center align-items-center">
             <Col
+              xs="12"
               lg="5"
-              className="d-flex flex-column text-white align-items-center"
+              className="d-flex flex-column text-white align-items-center order-1 order-md-0"
             >
               <Typography variant="p" className="fs-6">
                 Summer Sales
@@ -32,8 +35,8 @@ const ProductPage = () => {
                 Iron Iron
               </Typography>
             </Col>
-            <Col lg="2" className="text-center">
-              <span className="d-flex flex-column rounded-circle bg-black p-3  align-items-center">
+            <Col xs="5" lg="2" className="text-center order-0 order-md-1">
+              <p className="d-flex flex-column rounded-circle bg-black pt-4 pb-4">
                 <Typography variant="span" className="fs-6 text-grey">
                   Upto
                 </Typography>
@@ -43,9 +46,9 @@ const ProductPage = () => {
                 <Typography variant="span" className="fs-6 text-grey">
                   Off
                 </Typography>
-              </span>
+              </p>
             </Col>
-            <Col lg="5" className="text-end">
+            <Col xs="12" lg="5" className="text-center text-md-end order-2">
               <Button
                 variant="contained"
                 size="large"

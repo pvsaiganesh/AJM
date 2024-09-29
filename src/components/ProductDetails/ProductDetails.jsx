@@ -314,16 +314,19 @@ const ProductDetails = () => {
                       Instock
                     </Button>
                   </Typography>
-                  {/* <Container> */}
-                  <Rating
-                    defaultValue={5}
-                    value={5}
-                    readOnly
-                    fullWidth
-                    // className="me-2"
-                  />
-                  {/* </Container> */}
-                  <Typography variant="span" color="secondary">
+                  <Typography
+                    variant="span"
+                    color="secondary"
+                    className="d-flex flex-row align-items-center"
+                  >
+                    <Rating
+                      defaultValue={5}
+                      value={5}
+                      readOnly
+                      size="small"
+                      sx={{ width: "100px" }}
+                      className="me-2"
+                    />{" "}
                     4 Reviews
                   </Typography>
 
@@ -495,7 +498,7 @@ const ProductDetails = () => {
             </Container>
           </ThemeProvider>
         </Col>
-        <Col className="d-flex flex-row justify-content-center">
+        <Col className="d-flex flex-row justify-content-center pt-5">
           <Box sx={{ width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
