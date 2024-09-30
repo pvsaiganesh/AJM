@@ -504,6 +504,12 @@ const ProductDetails = () => {
               <Tabs
                 value={value}
                 onChange={handleChange}
+                // TabIndicatorProps={{ sx: { display: "none" } }}
+                sx={{
+                  "& .MuiTabs-flexContainer": {
+                    flexWrap: "wrap",
+                  },
+                }}
                 // variant="fullWidth"
                 centered
                 aria-label="basic tabs example"

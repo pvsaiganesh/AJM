@@ -10,10 +10,10 @@ import customer from "../../../assets/customer.svg";
 const Testimonial = () => {
   return (
     <Container fluid="true" className="p-1 p-lg-5 testimonial-bg text-center">
-      <Typography variant="h6" className="text-orange">
+      <Typography variant="h6" className="fs-6 text-orange">
         Client Testimonial
       </Typography>
-      <Typography variant="h4" className="p-2">
+      <Typography variant="h4" className="fs-4 fw-bold p-2">
         What our Clients Say
       </Typography>
       <Row className="pt-5">

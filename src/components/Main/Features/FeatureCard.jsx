@@ -21,7 +21,7 @@ const FeatureCard = (item) => {
         </span>
       </div>
       <div className=" align-self-center feature-text text-start text-wrap text-break text-wrapping">
-        <span className="fs-6 fw-bold mb-2 ">{item.title}</span>
+        <span className="fs-5 fw-bold mb-2 ">{item.title}</span>
         <br />
         <span className="fs-6">{item.description}</span>
       </div>

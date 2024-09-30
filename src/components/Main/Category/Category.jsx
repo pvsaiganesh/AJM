@@ -13,7 +13,7 @@ const Category = () => {
           <Typography variant="h6" className="fs-6 text-uppercase text-orange">
             Category
           </Typography>
-          <Typography variant="h5" className="fs-5 text-uppercase p-2">
+          <Typography variant="h5" className="fs-4 fw-bold text-uppercase p-2">
             Shop by Top Categories
           </Typography>
         </Col>

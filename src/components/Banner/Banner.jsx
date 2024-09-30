@@ -13,7 +13,7 @@ const Banner = () => {
         <Row>
           <Col xs="12" sm="6">
             <p className="fs-1">Building & Construction Materials</p>
-            <p className="fs-4 border-right ps-3">
+            <p className="fs-6 border-right ps-3">
               One Stop Construction materials store for all type of
               constructions{" "}
             </p>
