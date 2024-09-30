@@ -70,7 +70,7 @@ const ContactInfo = () => {
         </Col>
         <Col xs="!2" lg="5" className="p-5 pt-0 ">
           <Container fluid="true">
-            <Typography variant="h5" className="pb-3">
+            <Typography variant="h5" className="fs-4 fw-bold pb-3">
               Contact Us
             </Typography>
             <TextField
