@@ -188,12 +188,12 @@ const ProductDetails = () => {
   //   setSwiperRef(mySwiper);
   // }, []);
   return (
-    <Container className="hero p-1 p-lg-5 pt-2" fluid="true">
+    <Container className="hero p-1 p-lg-5 pt-0" fluid="true">
       <Row fluid="true">
         <Col
           lg="2"
           xs="4"
-          className="text-start text-md-center d-flex flex-column justify-content-center rounded"
+          className="text-start text-md-center d-flex flex-column justify-content-start rounded"
         >
           <Button
             className="bg-white text-dark"
