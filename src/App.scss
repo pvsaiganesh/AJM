@@ -95,3 +95,7 @@ $master-blue-1: #1d6383;
 .text-wrapping {
   white-space: normal;
 }
+.hero {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
